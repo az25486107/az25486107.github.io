@@ -234,7 +234,7 @@ sub_nav>ul>li>a{
 
 .sub_page>.title{
     margin: auto;
-    margin-top: 30px ;
+    margin-top: 60px ;
     margin-bottom: 15px ;
     width:250px;
     color:#d67f7f;
@@ -288,6 +288,7 @@ sub_nav>ul>li>a{
 .sub_page>ul>li>.text>.comment{
     bottom: 0px;
     color:rgb(83, 82, 82,0.7);
+    /* flex-direction:; */
 }
 .sub_page>ul>li>.text>.comment>i{
     font-size: 16px;
@@ -301,3 +302,48 @@ sub_nav>ul>li>a{
 }
 
 
+
+.more_btn{
+    margin: 80px auto;
+    margin-top: 60px;
+    padding: 20px 20px;
+    width: 300px;
+    text-decoration: none;   
+    background: rgb(83, 82, 82,0.1);
+    font-size: 40px;
+    border-radius: 10px;
+    color: rgb(83, 82, 82,0.7);
+    font-weight: bolder;
+}
+
+footer{
+    width: 960px;
+    height: 350px;
+    margin: 80px auto;
+    background: #e29a9a;
+    display: flex;
+    
+}
+
+footer>.wrap{
+    padding: 40px 60px;
+}
+footer>.wrap>ul{
+    display:inline-block;
+    margin-right: 30px;
+    
+}
+
+footer>.wrap>ul>li{
+    text-align: left;
+}
+
+
+footer>.wrap>ul>li>a{
+    
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    line-height: 30px;
+    flex-direction: row;
+}
