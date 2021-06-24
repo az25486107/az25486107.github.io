@@ -125,9 +125,9 @@ nav>ul>li>a{
 }
 
 .top_anno{
-    display: none;
+    /* display: none; */
     position: fixed;
-    top:0;
+    top:200px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -183,7 +183,7 @@ p.intro{
     margin: 0 20px;
 }
 
-a.button{
+.top_anno>a.button{
     color:white;
     text-decoration: none;
     background-color:#d67f7f;
@@ -324,6 +324,7 @@ sub_nav>ul>li>a{
     width: 960px;
     height: 350px;
     margin: 80px auto;
+    margin-top: 0px;
     background: #e29a9a;
     display: flex;
     
@@ -360,4 +361,208 @@ sub_nav>ul>li>a{
 .footer>.wrap>ul>li>.googleplay{
     width:150px;
     height: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+.signup{
+    background:#f5f5f5;
+    position: relative;
+    width: 960px;
+    height: 800px;
+    margin: auto;
+    /* border: 2px solid blue; */
+}
+.signup>.container{ 
+    top:50px;
+    left: 20px;
+    position: absolute;
+    display: flex;
+}
+
+.signup>.container>.list{
+    background: #f5f5f5;
+    width: 250px;
+    height: 550px;
+    /* border: 2px solid red; */
+}
+
+.signup>.container>.list>.profile{
+    width: 220px;
+    height: 280px;
+    /* box-shadow:2px 2px 4px #666; */
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    /* display: flex;
+    justify-content: center; */
+    /* align-items: center;  */
+}
+
+.signup>.container>.list>.profile>.photo{
+    width: 120px;
+    position: relative;
+    border-radius: 60px;
+    margin: auto;
+    height: 220px;
+}
+
+.signup>.container>.list>.profile>.photo>.big{
+    border-radius: 60px;
+    position: absolute;
+    top: 20px;
+}
+.signup>.container>.list>.profile>.photo>.sm{
+    border-radius: 60px;
+    background:white;
+    color: gray;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 110px;
+    left: 90px;
+}
+
+.signup>.container>.list>.profile>.photo>.lname{
+    color: gray;
+    width: 120px;
+    margin: auto;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bolder;
+    position: absolute;
+    top:155px;
+}
+
+.signup>.container>.list>.profile>.login_mode{
+    display: flex;
+    height: 60px;
+    border-top: 3px solid #f5f5f5;
+    align-items: center; 
+}
+
+.signup>.container>.list>.profile>.login_mode>img{
+    padding: 5px;
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+    /* align-items: center;  */
+}
+
+.signup>.container>.list>.profile>.login_mode>p{
+    margin: 0;
+    padding: 0;
+    width: 140px;
+    font-size: 14px;
+    font-weight: bolder;
+    justify-content:flex-start;
+    line-height: 14px;
+}
+.signup>.container>.list>.profile>.login_mode>.checkmark{
+    width: 20px;
+    height: 20px;
+    justify-content:flex-end;
+}
+
+.signup>.container>.list>.setting{
+    /* margin: auto; */
+	display: flex;
+    justify-content: center;
+    align-items: center; 
+
+    /* box-shadow:2px 2px 4px #666; */
+    margin-top: 20px;
+    width: 220px;
+    height: 250px;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.signup>.container>.list>.setting>ul>li{
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+
+.signup>.container>.data{
+    /* box-shadow:2px 2px 4px #666; */
+    width:650px;
+    height: 550px;
+    /* border: 2px solid purple; */
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+}
+
+.signup>.container>.data>.title{
+    font-size: 26px;
+    font-weight: bolder;
+    margin:20px 10px;
+}
+
+.signup>.container>.data>.nav{
+    display: flex;
+    border-bottom-width: 1px;
+    border-style: solid ;
+    list-style: none;
+    border-color:rgb(196, 196, 196);
+    border:none none 1px none;
+    margin-bottom: 5px;
+}
+
+
+.signup>.container>.data>.nav>li{
+    margin: 0 15px;
+    padding:10px 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.signup>.container>.data>.nav>li:first-child{
+    border-bottom-width: 4px;
+    border-style: solid ;
+    list-style: none;
+    border-color: #d67f7f;
+}
+
+.signup>.container>.data>.info{
+    width: 550px;
+    margin: 0 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.signup>.container>.data>.info>.group{
+    margin: 10px;
+}
+.signup>.container>.data>.info>.group>.title{
+    margin-top: 10px;
+    margin-bottom: 4px;
+    margin-left: 4px;
+    font-weight: bold;
+}
+
+.signup>.container>.data>.info>.group>input{
+    width: 250px;
+    font-size: 25px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(170, 168, 168, 0.836);
+}
+
+.signup>.container>.data>.button{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    padding: 15px 25px;
+    background: #d67f7f;
+    border-radius: 5px;
+    text-decoration: none;
+    color: snow;
 }
