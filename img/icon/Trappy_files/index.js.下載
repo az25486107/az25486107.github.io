@@ -18,18 +18,8 @@ let photo_list=[
 
 let css={
     black_block:{display:false},
-    top_anno:{display:false},
-    signin:{display:false}
+    top_anno:{display:false}
 }
-
-let main_nav=[
-    {name:"帳戶",href:"javascript:void(0)",action:"open_acc_window"},
-    {name:"行程",href:"javascript:void(0)",action:"open_acc_window"},
-    {name:"聊天",href:"javascript:void(0)",action:"open_acc_window"},
-    {name:"通知",href:"javascript:void(0)",action:"open_acc_window"},
-    {name:"下載",href:"javascript:void(0)",action:"open_acc_window"},
-    {name:"關於我們",href:"javascript:void(0)",action:"open_acc_window"},
-]
 
 let vm=new Vue({
     el:"#app",
@@ -47,7 +37,7 @@ let vm=new Vue({
     },
     mounted(){
         this.intervalId = setInterval(this.scroll, 5000)
-    },
+     },
     methods:{/*方法*/
         scroll(){
             setTimeout(() => {this.index=(this.index+1)%4}, 1000)
@@ -72,12 +62,7 @@ let vm=new Vue({
         close_other(){
             css.black_block.display=false
             css.top_anno.display=false
-            css.signin.display=false
-        },
-        open_signin_window(){
-            css.black_block.display=true
-            css.signin.display=true
-        },
+        }
     }
 })
 
