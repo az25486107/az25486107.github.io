@@ -59,30 +59,96 @@ nav>ul>li>a{
     display: flex;
     width: 850px;
     background-repeat: none;
-    height: 500px;
+    /* height: 500px; */
     justify-content:center;
     flex-direction:row;
 }
 
-.search>ul>li{
-    width: 120px;
-    height: 60px;
-    background:rgba(233, 222, 222, 0.7);
-    border: 2px solid rgba(233, 222, 222, 0.8); 
-    border-bottom-left-radius: 40px;
-    border-top-left-radius: 40px;
+.search>.sel_menu{
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    /* 去除箭頭包含下拉選單預設樣式 */
+    
+    text-align: center;
+    text-align-last: center;
+    /*上下左右文本置中 */
 
+    width: 120px;
+    padding: 0 20px;
+    /* 調整select大小用padding,width會讓下方option無效無法置中 */
+    height: 60px;
+    line-height:60px ;
+
+    background-color:rgba(233, 222, 222, 0.7);
+    font-size: 25px;
+    font-weight: bolder;
+    color: rgba(95, 93, 93, 0.8);
+    border: 2px solid rgba(233, 222, 222, 0.8); 
+    border-bottom-left-radius:20px;
+    border-top-left-radius: 20px;
     box-sizing: border-box;
+    
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    /*下拉動畫特效  */
+
+    overflow: hidden;
+    /* 超過高度的內容隱藏 */
 }
 
-.search>ul>li>a{
+.search>.sel_menu:hover{
+    height: auto;
+    border-bottom-right-radius:20px;
+    border-top-right-radius:20px;
+}
+
+
+.search>.sel_menu:focus{
+    border-radius:0px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    margin: 0;
+}
+
+.search>.sel_menu>option{
+    border-radius:0px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    overflow: hidden;
+}
+
+
+/* .search>.sel_menu>option:root{
+    margin: -5px;
+    border-radius:0px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+} */
+
+.search>.sel_menu:focus{
+    border:none;
+    outline:none;
+}
+
+
+
+.search>.sel_menu>option{
+    /* width: 120px; */
+    /* 寬度無法有效控制option,只能用padding設定 */
+}
+
+
+/* .search>ul>li>a{
     text-decoration: none;
     font-size: 25px;
     font-weight: bolder;
     height: 60px;
     color: rgba(95, 93, 93, 0.8);
 }
-
+ */
 
 .search>input{
     width: 650px;
@@ -125,7 +191,7 @@ nav>ul>li>a{
 }
 
 .top_anno{
-    /* display: none; */
+    display: none;
     position: fixed;
     top:200px;
     bottom: 0;
@@ -565,4 +631,216 @@ sub_nav>ul>li>a{
     border-radius: 5px;
     text-decoration: none;
     color: snow;
+}
+
+
+
+.container{
+    width: 960px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background:#f5f5f5;
+}
+
+.container>.line{
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.container>.b_line{
+    padding: 50px 0px;
+}
+.container>.line>.profile{
+    /* border: 3px solid red; */
+    width: 70%;
+}
+
+
+.container>.line>.profile>.photo{
+    display: flex;
+    align-items:flex-start;
+    margin: 10px;
+}
+.container>.line>.profile>.photo>img{
+    border-radius: 30px;
+}
+
+.container>.line>.profile>.photo>.right{
+    margin: 10px 5px;
+    font-size: 12px;
+}
+
+.container>.line>.profile>.photo>.right>.name{
+    padding: 0 10px;
+    text-align: right;
+}
+
+.container>.line>.profile>.photo>.right>.name>a{
+    margin: 0 4px;
+    font-weight: bolder;
+    border: 1px solid #aca9a9;
+    padding: 5px;
+    text-decoration: none;
+    color: #aca9a9;
+}
+
+.container>.line>.profile>.photo>.right>.birthday{
+    padding: 5px;
+}
+
+.container>.line>.profile>.intro{
+    margin: 10px 0;
+    line-height: 20px;
+    font-size: 10px;
+    padding: 10px;
+    /* border: 3px solid rgb(192, 185, 185); */
+    /* width: 70%;如果要縮小文字的範圍在解開*/
+}
+
+.container>.line>.profile>.btn_group{
+    margin: 10px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+.container>.line>.profile>.btn_group>a{
+    align-self: center;
+    border: 2px solid rgb(83, 82, 82,0.7);
+    color:  rgb(83, 82, 82,0.7);
+    text-decoration: none;
+    background-color: white;
+    font-weight: bolder;
+    padding: 0;
+    height: 20px;
+    font-size: 15px;
+    margin: 0;
+    padding: 0 10px;
+}
+.container>.line>.profile>.btn_group>.comment{
+    bottom: 0;
+    right: 0;
+    color:rgb(83, 82, 82,0.7);
+    /* flex-direction:; */
+}
+.container>.line>.profile>.btn_group>.comment>i{
+    font-size: 16px;
+    padding: 10px;
+    line-height: 25px;
+}
+
+.container>.line>.profile>.btn_group>.comment>span{
+    font-size: 16px;
+    line-height: 25px;
+}
+
+
+
+.container>.line>.dayline{
+    border: 3px solid blue;
+    width: 30%;
+}
+
+.container>.line>.introduce{
+    /* border: 3px solid black; */
+    width: 70%;
+}
+
+.container>.line>.introduce>.day{
+    margin: 10px 1px;
+    font-size: 10px;
+    background-color: #f12f8a;
+    color: white;
+    font-weight: bolder;
+    padding: 5px 5px;
+    text-align: center;
+    width: 35px;
+    border-radius:9px;
+}
+
+.container>.line>.introduce>.title{
+    margin: 5px 0px;
+    font-size: 10px;
+    font-weight: bolder;
+    
+    line-height: 18px;
+    /* padding: 0 10px; */
+}
+
+.container>.line>.introduce>.title>i{
+    margin-right:5px;
+    font-size: 18px;
+    line-height: 18px;
+    /* padding: 0 10px; */
+}
+
+
+
+.container>.line>.introduce>.album{
+    width: 95%;
+    margin: auto;   
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container>.line>.introduce>.album>img{
+    margin: 1px;
+    width: 33%;
+    height: 33%;    
+}
+
+.container>.line>.introduce>.text{
+    margin: 15px 0;
+    font-size: 10px;  
+    line-height: 20px;
+}
+
+
+
+
+
+.container>.line>.commend{
+    /* border: 3px solid purple; */
+    width: 30%;
+}
+
+.container>.line>.commend>.title{
+    font-weight: bolder;
+    border-bottom: 2px solid #d6d3d3f3 ;
+    padding: 3px;
+}
+.container>.line>.commend>.obj_group{
+    margin: 15px;
+    display: flex;
+    align-items: flex-start;
+}
+.container>.line>.commend>.obj_group>img{
+    border-radius: 60px;
+}
+
+.container>.line>.commend>.obj_group>.text>a{
+    margin: 0 6px;
+    font-size: 8px;
+    color: rgb(241, 48, 167);
+    font-weight: bolder;
+    text-decoration: none;
+}
+.container>.line>.commend>.obj_group>.text{
+    margin: 0 10px;
+    display: flex;
+    direction: row;
+    flex-wrap: wrap;
+}
+.container>.line>.commend>.obj_group>.text>.name{
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+.container>.line>.commend>.obj_group>.text>.info{
+    font-weight: bolder;
+    margin: 5px 0px;
+    font-size: 12px;
+    color: rgba(77, 74, 74, 0.45);
 }
