@@ -14,9 +14,9 @@ let vm=new Vue({
     computed:{/*即刻運算*/
         selected(){
             new_arr=this.search_data.forEach(function(item,index,array){
-                if(item.selected==true){
+                if(item.selected==true && array[0]!=item){
                     array[0]= Object.assign({},item)
-                    array[0].type=array[0].type+"▼"
+                    array[0].type=array[0].type+" ▼"
                 }
             })
             return this.search_data
