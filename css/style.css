@@ -18,11 +18,12 @@
 }
 
 .logo_group{
-    align-self:left;
-    width: 100px;
-    display:flex;
-    margin-left: 20px;
-    
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items:center;
 }
 
 .logo_group>.icon{
