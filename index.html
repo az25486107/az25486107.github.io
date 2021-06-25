@@ -8,7 +8,7 @@
         <link href="./css/style.css" rel="stylesheet">
         <title>Trappy</title>
     </head>
-    <body>
+    <body ><div id="app">
         <!-- <img src='https://picsum.photos/200/200' alt=""> -->
         <nav>
             <div class="logo_group">
@@ -16,7 +16,7 @@
                 <p class="title">TRAPPY</p>
             </div>
             <ul>    
-                <li @click="login_class"><a href="">帳戶</a></li>
+                <li><a href="">帳戶</a></li>
                 <li><a href="">行程</a></li>
                 <li><a href="">聊天</a></li>
                 <li><a href="">通知</a></li>
@@ -25,9 +25,11 @@
             </ul>
         </nav>
         
-        
-        <img class="banner" src='https://picsum.photos/960/500' alt="">
-        <div id="app" class="search">
+        <transition-group name="fade" class="imgList" tag="div">
+            <img class="banner" v-for='(pic,idx) in photo_list' :src="pic.src" v-show="index===idx" :key="idx" alt="">
+        </transition-group>
+            <!-- <img class="banner" src='https://picsum.photos/960/500' alt=""> -->
+        <div class="search">
             <div class="sel_menu">
                 <ul>
                     <li v-for="menu in selected" @click="select_item" >{{menu.type}}</li>
@@ -38,9 +40,9 @@
 
         </div>
         
-        <div class="block">
+        <!-- <div class="block" :class="{'close_display':test1}" @click="close_other">
             
-        </div>
+        </div> -->
         <div class="top_anno">
             <div class="t_group">
                 <img class="icon" src='./icon.jpg'  alt=""> 
@@ -194,6 +196,6 @@
             
             </div>
         </div>
-    </body>
+    </div></body>
     <script src="./js/index.js"></script>
 </html>

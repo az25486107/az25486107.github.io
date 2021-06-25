@@ -3,9 +3,19 @@
     padding: 0;
 }
 
-/* body{
-    background: gray;
-} */
+.fade-enter,
+.fade-leave-to{
+    opacity: 0;
+}
+.fade-enter-active,
+.fade-enter-leave{
+    transition:opacity 1s;
+}
+
+
+.close_display{
+    display: none;
+}
 
 .logo_group{
     align-self:left;
@@ -197,12 +207,12 @@ nav>ul>li>a{
     position:fixed;
     left:0px;
     top:0px;
-    /* display:none; */
+    display:none;
     z-index:1;
 }
 
 .top_anno{
-    /* display: none; */
+    display: none;
     z-index:2;
     position: fixed;
     top:100px;
