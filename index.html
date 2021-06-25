@@ -27,18 +27,15 @@
         
         
         <img class="banner" src='https://picsum.photos/960/500' alt="">
-        <div class="search">
-            <ul>
-                <li><a href="">餐廳▼</a></li>
-                <!-- <li><a href="">景點</a></li>
-                <li><a href="">飯店</a></li>
-                <li><a href="">文章</a></li>
-                <li><a href="">活動</a></li> -->
-            </ul>
+        <div id="app" class="search">
+            <div class="sel_menu">
+                <ul>
+                    <li v-for="menu in selected" @click="select_item" >{{menu.type}}</li>
+                </ul>
+            </div>
             <input type="text" name="search-bar" placeholder="搜尋..." name="search" id="search">
             <i class="fas fa-search"></i>
-            <!-- <div class="wrap">
-            </div> -->
+
         </div>
         
         
@@ -196,5 +193,5 @@
             </div>
         </div>
     </body>
-
+    <script src="./js/index.js"></script>
 </html>

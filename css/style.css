@@ -62,6 +62,7 @@ nav>ul>li>a{
     /* height: 500px; */
     justify-content:center;
     flex-direction:row;
+
 }
 
 .search>.sel_menu{
@@ -75,7 +76,7 @@ nav>ul>li>a{
     /*上下左右文本置中 */
 
     width: 120px;
-    padding: 0 20px;
+    /* padding: 0 20px; */
     /* 調整select大小用padding,width會讓下方option無效無法置中 */
     height: 60px;
     line-height:60px ;
@@ -106,19 +107,13 @@ nav>ul>li>a{
 }
 
 
-.search>.sel_menu:focus{
-    border-radius:0px;
-    border-top-right-radius: 30px;
-    border-top-left-radius: 30px;
-    margin: 0;
+.search>.sel_menu>ul>li:hover{
+    height: auto;
+    background-color:rgba(202, 200, 200, 0.698);
 }
 
-.search>.sel_menu>option{
-    border-radius:0px;
-    border-top-right-radius: 30px;
-    border-top-left-radius: 30px;
-    overflow: hidden;
-}
+
+
 
 
 /* .search>.sel_menu>option:root{
