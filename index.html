@@ -17,7 +17,7 @@
             </div>
             <ul>    
                 <li><a href="">帳戶</a></li>
-                <li><a href="">行程</a></li>
+                <li><a href="javascript:void(0)" @click="open_travel_window">行程</a></li>
                 <li><a href="">聊天</a></li>
                 <li><a href="">通知</a></li>
                 <li><a href="">下載</a></li>
@@ -28,6 +28,7 @@
         <transition-group name="fade" class="imgList" tag="div">
             <img class="banner" v-for='(pic,idx) in photo_list' :src="pic.src" v-show="index===idx" :key="idx" alt="">
         </transition-group>
+
             <!-- <img class="banner" src='https://picsum.photos/960/500' alt=""> -->
         <div class="search">
             <div class="sel_menu">
@@ -40,10 +41,10 @@
 
         </div>
         
-        <!-- <div class="block" :class="{'close_display':test1}" @click="close_other">
+        <div v-show="css.black_block.display" class="block" @click="close_other">
             
-        </div> -->
-        <div class="top_anno">
+        </div>
+        <div  v-show="css.top_anno.display" class="top_anno">
             <div class="t_group">
                 <img class="icon" src='./icon.jpg'  alt=""> 
                 <p class="title">TRAPPY 規劃</p>

@@ -16,9 +16,14 @@ let photo_list=[
         {index:5,src:'https://picsum.photos/960/500?random=5'},      
     ]
 
+let css={
+    black_block:{display:false},
+    top_anno:{display:false}
+}
+
 let vm=new Vue({
     el:"#app",
-    data:{index:1,search_data,photo_list},
+    data:{index:1,search_data,photo_list,css},
     computed:{/*即刻運算*/
         selected(){
             new_arr=this.search_data.forEach(function(item,index,array){
@@ -50,8 +55,17 @@ let vm=new Vue({
             console.log(event.target.innerText)
             return event.target.innerText
         },
-
+        open_travel_window(){
+            css.black_block.display=true
+            css.top_anno.display=true
+        },
+        close_other(){
+            css.black_block.display=false
+            css.top_anno.display=false
+        }
     }
 })
+
+
 
 // vm();

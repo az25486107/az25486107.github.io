@@ -207,12 +207,12 @@ nav>ul>li>a{
     position:fixed;
     left:0px;
     top:0px;
-    display:none;
+    /* display:none; */
     z-index:1;
 }
 
 .top_anno{
-    display: none;
+    /* display: none; */
     z-index:2;
     position: fixed;
     top:100px;
