@@ -399,6 +399,7 @@ a.text{
     margin-right: 15px;
     margin-left: 15px;
     padding: 10px 15px;
+    cursor: pointer;
 }
 
 /* .sub_nav>ul>li:first-child{
@@ -410,7 +411,7 @@ a.text{
 
 }
 
-.sub_nav>ul>li>a{
+.sub_nav>ul>li{
     font-size: 30px;
     text-decoration: none;
     color:#54514e;
@@ -478,11 +479,11 @@ a.text{
     margin: 50px auto;
     display: flex;
 }
-.sub_page>.sect>ul>li>img{
+.sub_page>.sect>ul.post>li>img{
     box-shadow: 1px 1px 10px 1px;
     border-radius: 10px
 }
-.sub_page>.sect>ul>li>.text{
+.sub_page>.sect>ul.post>li>.text{
     /* width: 560px; */
     margin: 0px 20px;
     position: relative;
@@ -530,8 +531,72 @@ a.text{
     line-height: 25px;
 }
 
+.sub_page>.sect>ul.resta{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.sub_page>.sect>ul.resta>li{
+    width: 800px;
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    /* border:5px solid black ; */
+    box-shadow: 0 15px 20px 0 rgb(0 0 0 / 20%);
+}
 
-.more_btn{
+.sub_page>.sect>ul.resta>li>.t_group{
+    width:750px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+}
+.sub_page>.sect>ul.resta>li>.t_group>p.idx{
+    font-size:70px;
+    font-weight: bolder;   
+    color: rgb(219, 100, 100);
+}
+.sub_page>.sect>ul.resta>li>.t_group>p.title{
+    margin: 10px;
+    font-size:40px;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    box-shadow:none;
+    line-height: 10px;
+    color: rgb(219, 100, 100);
+}
+
+.sub_page>.sect>ul.resta>li>img{
+    width: 750px;
+    margin: 10px auto;
+    /* border:2px solid black ; */
+}
+
+
+.sub_page>.sect>ul.resta>li>p
+{
+    width:750px;
+    margin: 5px auto;
+}
+
+.sub_page>.sect>ul.resta>li>p.text
+{
+    width:750px;
+    margin: 20px auto;
+}
+
+.sub_page>.sect>ul.resta>li>p>span{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.sub_page>.sect>ul.resta>li.none_box{
+    box-shadow: none;
+}
+
+
+.more_btn{ 
     margin: auto;
     padding: 20px 20px;
     width:900px;
@@ -544,7 +609,7 @@ a.text{
 }
 
 .morSe_btn{
-        margin: auto;
+    margin: auto;
     /* margin-top: 60px; */
     padding: 20px 20px;
     /* width:900px; */
@@ -554,6 +619,7 @@ a.text{
     border-radius: 10px;
     color: rgb(83, 82, 82,0.7);
     font-weight: bolder;
+
 }
 
 

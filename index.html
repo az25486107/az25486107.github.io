@@ -74,15 +74,16 @@
 
         <div class="sub_nav">
             <ul>
-                <li @click='change_tab("article")'  :class="{border_focus:border_state[0]}"><a href="javascript:void(0)">文章</a></li>
-                <li @click='change_tab("activity")' :class="{border_focus:border_state[1]}"><a href="javascript:void(0)">活動</a></li>
-                <li @click='change_tab("view")' :class="{border_focus:border_state[2]}"><a href="javascript:void(0)">景點</a></li>
-                <li @click='change_tab("resta")' :class="{border_focus:border_state[3]}"><a href="javascript:void(0)">餐廳</a></li>
-                <li @click='change_tab("hotel")' :class="{border_focus:border_state[4]}"><a href="javascript:void(0)">飯店</a></li>
+                <li v-for="(sub_nav,key) of subnav" 
+                    @click='change_tab(key)'
+                    :class="{border_focus:subnav[key].state}">
+                    {{sub_nav.cht}}</li>
             </ul>
         </div>
 
         <div class="sub_page">
+            <resta_page v-show="sub_tab=='resta'" subclass="resta" subname="hot"></resta_page>
+            <resta_page v-show="sub_tab=='resta'" subclass="resta" subname="new"></resta_page>
             <article_page v-show="sub_tab=='article'" subclass="post" subname="hot"></article_page>
             <article_page v-show="sub_tab=='article'" subclass="post" subname="new"></article_page>
             <article_page v-show="sub_tab=='activity'" subclass="activity" subname="hot"></article_page>
@@ -90,7 +91,7 @@
             <view_page v-show="sub_tab=='view'" subclass="view" subname="hot"></view_page>
             <view_page v-show="sub_tab=='view'" subclass="view" subname="new"></view_page>
         </div>
-
+        
 
         <div class="footer">
             <div class="wrap">
