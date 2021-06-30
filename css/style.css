@@ -383,11 +383,11 @@ a.text{
     margin-top:20px;
 }
 
-sub_nav{
+.sub_nav{
     /* border: 5px solid red; */
 }
 
-sub_nav>ul{
+.sub_nav>ul{
     display: flex;
     width: 960px;
     margin: 20px auto;
@@ -395,21 +395,33 @@ sub_nav>ul{
     margin-left: 40px; */
 }
 
-sub_nav>ul>li{
+.sub_nav>ul>li{
     margin-right: 15px;
     margin-left: 15px;
     padding: 10px 15px;
 }
 
-sub_nav>ul>li:first-child{
+/* .sub_nav>ul>li:first-child{
     border-bottom:5px solid #d67f7f;
+} */
+
+.sub_nav>ul>li:focus,.sub_nav>ul>li:hover{
+    border-bottom:5px solid #d67f7f;
+
 }
 
-sub_nav>ul>li>a{
+.sub_nav>ul>li>a{
     font-size: 30px;
     text-decoration: none;
     color:#54514e;
     font-weight: bold;
+}
+
+.sub_nav>ul>li:hover{
+    border-bottom:5px solid #d67f7f;
+}
+.border_focus{
+    border-bottom:5px solid #d67f7f;
 }
 
 
@@ -417,11 +429,11 @@ sub_nav>ul>li>a{
 .sub_page{
     height: 1980px;
 } */
-.sub_page>.sect>.title{
+.sub_page>.sect>ul>.title,.sub_page>.sect>.title{
     margin: auto;
     margin-top: 60px ;
     margin-bottom: 15px ;
-    width:250px;
+    width:180px;
     color:#d67f7f;
     font-size: 45px;
     font-weight: bolder;
@@ -434,6 +446,33 @@ sub_nav>ul>li>a{
     /* height: 100%; */
     margin: 0px auto;
 }
+
+.sub_page>.sect>ul.view{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sub_page>.sect>ul.view>li{
+    margin: 20px auto;
+}
+
+.sub_page>.sect>ul.view>li>img{
+    position: relative;
+}
+
+.sub_page>.sect>ul.view>li>span{
+    position: absolute;
+    color: rgb(219, 100, 100);
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: bolder;
+    background-color: rgb(245, 193, 193);
+    text-shadow: rgb(255, 255, 255) 0px 0px 10px;
+    border: 2px solid black;
+    border-radius: 7px;
+    /* top: 80px; */
+}
+
 
 .sub_page>.sect>ul>li{
     margin: 50px auto;

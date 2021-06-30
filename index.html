@@ -72,67 +72,26 @@
             <a class="text" href="#">看其他人去哪裡玩</a>
         </div>
 
-        <sub_nav>
+        <div class="sub_nav">
             <ul>
-                <li><a href="">文章</a></li>
-                <li><a href="">活動</a></li>
-                <li><a href="">景點</a></li>
-                <li><a href="">餐廳</a></li>
-                <li><a href="">飯店</a></li>
-            </ul>
-        </sub_nav>
-        <div class="sub_page">
-            <article_page></article_page>
-            
-            <p class="title">最新文章</p>
-            <ul>
-                <li>
-                    <img src='https://picsum.photos/400/250?random=14' alt="">
-                    <div class="text">
-                        <div class='title'> 追求小學，新型暫無百度能夠所說印刷面對，理由程度大家都 </div>
-                        <div class='content'>地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。</div>
-                        <div class="comment">
-                            <i class="fas fa-chart-line"></i><span>2808</span>
-                            <i class="fas fa-heart"></i><span>2808</span>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <img src='https://picsum.photos/400/250?random=13' alt="">
-                    <div class="text">
-                        <div class='title'> 追求小學，新型暫無百度能夠所說印刷面對，理由程度大家都 </div>
-                        <div class='content'>地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。</div>
-                        <div class="comment">
-                            <i class="fas fa-chart-line"></i><span>2808</span>
-                            <i class="fas fa-heart"></i><span>2808</span>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <img src='https://picsum.photos/400/250?random=12' alt="">
-                    <div class="text">
-                        <div class='title'> 追求小學，新型暫無百度能夠所說印刷面對，理由程度大家都 </div>
-                        <div class='content'>地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。</div>
-                        <div class="comment">
-                            <i class="fas fa-chart-line"></i><span>2808</span>
-                            <i class="fas fa-heart"></i><span>2808</span>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <img src='https://picsum.photos/400/250?random=11' alt="">
-                    <div class="text">
-                        <div class='title'> 追求小學，新型暫無百度能夠所說印刷面對，理由程度大家都 </div>
-                        <div class='content'>地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。</div>
-                        <div class="comment">
-                            <i class="fas fa-chart-line"></i><span>2808</span>
-                            <i class="fas fa-heart"></i><span>2808</span>
-                        </div>
-                    </div>
-                </li>
-                <li><a class="morSe_btn" href="">查看更多</a></li>
+                <li @click='change_tab("article")'  :class="{border_focus:border_state[0]}"><a href="javascript:void(0)">文章</a></li>
+                <li @click='change_tab("activity")' :class="{border_focus:border_state[1]}"><a href="javascript:void(0)">活動</a></li>
+                <li @click='change_tab("view")' :class="{border_focus:border_state[2]}"><a href="javascript:void(0)">景點</a></li>
+                <li @click='change_tab("resta")' :class="{border_focus:border_state[3]}"><a href="javascript:void(0)">餐廳</a></li>
+                <li @click='change_tab("hotel")' :class="{border_focus:border_state[4]}"><a href="javascript:void(0)">飯店</a></li>
             </ul>
         </div>
+
+        <div class="sub_page">
+            <article_page v-show="sub_tab=='article'" subclass="post" subname="hot"></article_page>
+            <article_page v-show="sub_tab=='article'" subclass="post" subname="new"></article_page>
+            <article_page v-show="sub_tab=='activity'" subclass="activity" subname="hot"></article_page>
+            <article_page v-show="sub_tab=='activity'" subclass="activity" subname="new"></article_page>
+            <view_page v-show="sub_tab=='view'" subclass="view" subname="hot"></view_page>
+            <view_page v-show="sub_tab=='view'" subclass="view" subname="new"></view_page>
+        </div>
+
+
         <div class="footer">
             <div class="wrap">
                 <ul>
