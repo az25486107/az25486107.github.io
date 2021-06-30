@@ -4,94 +4,101 @@
         <meta charset="UTF-8">
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <script src="https://kit.fontawesome.com/2a41585493.js" crossorigin="anonymous"></script>
-
         <link rel="stylesheet" href="./css/reset.css">
         <link href="./css/style.css" rel="stylesheet">
-        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v11.0&appId=163328585837207&autoLogAppEvents=1" nonce="1eLwNlxd"></script>
         <title>Trappy</title>
     </head>
     <body ><div id="app">
-        <div id="fb-root"></div>
-        <!-- <img src='https://picsum.photos/200/200' alt=""> -->
-        <nav>
-            <div class="logo_group">
-                <img class="icon" src="./icon.jpg" alt="">
-                <p class="title">TRAPPY</p>
-            </div>
-            <ul>    
-                <li><a href="javascript:void(0)" @click="open_signin_window">帳戶</a></li>
-                <li><a href="javascript:void(0)" @click="open_travel_window">行程</a></li>
-                <li><a href="">聊天</a></li>
-                <li><a href="">通知</a></li>
-                <li><a href="">下載</a></li>
-                <li><a href="">關於我們</a></li>
-            </ul>
-        </nav>
-        
-        <transition-group name="fade" class="imgList" tag="div">
-            <img class="banner" v-for='(pic,idx) in photo_list' :src="pic.src" v-show="index===idx" :key="idx" alt="">
-        </transition-group>
+        <div class="contaniner">
+            <!-- <img src='https://picsum.photos/200/200' alt=""> -->
+            <nav>
+                <div class="logo_group" @click="go_home">
+                    <img class="icon" src="./icon.jpg" alt="">
+                    <p class="title">TRAPPY</p>
+                </div>
+                <ul>    
+                    <li><a href="javascript:void(0)" @click="open_signin_window">帳戶</a></li>
+                    <li><a href="javascript:void(0)" @click="open_travel_window">行程</a></li>
+                    <li><a href="">聊天</a></li>
+                    <li><a href="">通知</a></li>
+                    <li><a href="">下載</a></li>
+                    <li><a href="">關於我們</a></li>
+                </ul>
+            </nav>
+            
+            <transition-group name="fade" class="imgList" tag="div">
+                <img class="banner" v-for='(pic,idx) in photo_list' :src="pic.src" v-show="index===idx" :key="idx" alt="">
+            </transition-group>
 
-            <!-- <img class="banner" src='https://picsum.photos/960/500' alt=""> -->
-        <div class="search">
-            <div class="sel_menu">
+                <!-- <img class="banner" src='https://picsum.photos/960/500' alt=""> -->
+            <div class="search">
+                <div class="sel_menu">
+                    <ul>
+                        <li v-for="menu in selected" @click="select_item" >{{menu.type}}</li>
+                    </ul>
+                </div>
+                <input type="text" name="search-bar" placeholder="搜尋..." name="search" id="search">
+                <i class="fas fa-search"></i>
+
+            </div>
+            
+            <div v-show="css.black_block.display" class="block" @click="close_other">
+                
+            </div>
+
+            <div  v-show="css.signin.display" class="signin">
+                <div class="t_group">
+                    <div class="wrap">
+                        <img class="icon" src='./icon.jpg'  alt="">
+                        <p class="title">登入TRAPPY</p>
+                    </div>
+                    <div class="account">
+                        <p>帳號:</p>
+                        <input v-model='p_data["acc"]' type="text" name="acc" id="acc">
+                    </div>
+                    <div class="pwd">
+                        <p>密碼:</p>
+                        <input v-model='p_data["pwd"]' type="password" name="pwd" id="pwd">
+                    </div>
+                    <img src="./img/btn/email_lg.png" @click="mail_login">
+                    <img src="./img/btn/fb_lg.png" alt="">
+                    <img src="./img/btn/google_lg.png" alt="">
+                    
+                
+                </div>
+            </div>
+
+            <div  v-show="css.top_anno.display" class="top_anno">
+                <div class="t_group">
+                    <img class="icon" src='./icon.jpg'  alt=""> 
+                    <p class="title">TRAPPY 規劃</p>
+                </div>
+                <img class="map_icon" src="./map_icon.png" alt="">
+                <p class="intro">只需選擇目的地與出發日期就能規劃旅遊行程</p>
+                <a class="button" href="#">建立行程</a>
+                <a class="text" href="#">看其他人去哪裡玩</a>
+            </div>
+
+            <div class="sub_nav">
                 <ul>
-                    <li v-for="menu in selected" @click="select_item" >{{menu.type}}</li>
+                    <li v-for="(sub_nav,key) of subnav" 
+                        @click='change_tab(key)'
+                        :class="{border_focus:subnav[key].state}">
+                        {{sub_nav.cht}}</li>
                 </ul>
             </div>
-            <input type="text" name="search-bar" placeholder="搜尋..." name="search" id="search">
-            <i class="fas fa-search"></i>
 
-        </div>
-        
-        <div v-show="css.black_block.display" class="block" @click="close_other">
-            
-        </div>
-
-        <div  v-show="css.signin.display" class="signin">
-            <div class="t_group">
-                <div class="wrap">
-                    <img class="icon" src='./icon.jpg'  alt="">
-                    <p class="title">登入TRAPPY</p>
-                </div>
-
-                 <img src="./img/btn/fb_lg.png" alt="">
-                 <img src="./img/btn/google_lg.png" alt="">
-                 <img src="./img/btn/email_lg.png" alt="">
+            <div class="sub_page">
+                <resta_page v-show="sub_tab=='resta'" subclass="resta" subname="hot"></resta_page>
+                <resta_page v-show="sub_tab=='resta'" subclass="resta" subname="new"></resta_page>
+                <article_page v-show="sub_tab=='article'" subclass="post" subname="hot"></article_page>
+                <article_page v-show="sub_tab=='article'" subclass="post" subname="new"></article_page>
+                <article_page v-show="sub_tab=='activity'" subclass="activity" subname="hot"></article_page>
+                <article_page v-show="sub_tab=='activity'" subclass="activity" subname="new"></article_page>
+                <view_page v-show="sub_tab=='view'" subclass="view" subname="hot"></view_page>
+                <view_page v-show="sub_tab=='view'" subclass="view" subname="new"></view_page>
             </div>
-        </div>
-
-        <div  v-show="css.top_anno.display" class="top_anno">
-            <div class="t_group">
-                <img class="icon" src='./icon.jpg'  alt=""> 
-                <p class="title">TRAPPY 規劃</p>
-            </div>
-            <img class="map_icon" src="./map_icon.png" alt="">
-            <p class="intro">只需選擇目的地與出發日期就能規劃旅遊行程</p>
-            <a class="button" href="#">建立行程</a>
-            <a class="text" href="#">看其他人去哪裡玩</a>
-        </div>
-
-        <div class="sub_nav">
-            <ul>
-                <li v-for="(sub_nav,key) of subnav" 
-                    @click='change_tab(key)'
-                    :class="{border_focus:subnav[key].state}">
-                    {{sub_nav.cht}}</li>
-            </ul>
-        </div>
-
-        <div class="sub_page">
-            <resta_page v-show="sub_tab=='resta'" subclass="resta" subname="hot"></resta_page>
-            <resta_page v-show="sub_tab=='resta'" subclass="resta" subname="new"></resta_page>
-            <article_page v-show="sub_tab=='article'" subclass="post" subname="hot"></article_page>
-            <article_page v-show="sub_tab=='article'" subclass="post" subname="new"></article_page>
-            <article_page v-show="sub_tab=='activity'" subclass="activity" subname="hot"></article_page>
-            <article_page v-show="sub_tab=='activity'" subclass="activity" subname="new"></article_page>
-            <view_page v-show="sub_tab=='view'" subclass="view" subname="hot"></view_page>
-            <view_page v-show="sub_tab=='view'" subclass="view" subname="new"></view_page>
-        </div>
-        
+        </div>    
 
         <div class="footer">
             <div class="wrap">
@@ -125,29 +132,6 @@
             </div>
         </div>
     </div>
-
-
-    <script>
-        function onSuccess(googleUser) {
-          console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
-        }
-        function onFailure(error) {
-          console.log(error);
-        }
-        function renderButton() {
-          gapi.signin2.render('my-signin2', {
-            'scope': 'profile email',
-            'width': 240,
-            'height': 50,
-            'longtitle': true,
-            'theme': 'dark',
-            'onsuccess': onSuccess,
-            'onfailure': onFailure
-          });
-        }
-      </script>
-    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
-    <!-- google按鈕的src -->
     </body>
     <script src="./js/index.js"></script>
 </html>

@@ -6,23 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
     <link href="./css/style.css" rel="stylesheet">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.9/vue.js' integrity='sha512-o9SZrtqlGkpa7EF+dDrNjEdRFFYhymlrBzDKpolHNolxsyx0IcXAbEm9i1e8QpoiMgEdKZVtY8XiK1t8i6jVDA==' crossorigin='anonymous'></script>
     <title>註冊帳號</title>
 </head>
 <body>
+    <div id="app">
     <nav>
-        <div class="logo_group">
+        <div class="logo_group" @click="go_home">
             <img class="icon" src="./icon.jpg" alt="">
             <p class="title">TRAPPY</p>
         </div>
         <ul>    
-            <li><a href="">帳戶</a></li>
-            <li><a href="">行程</a></li>
+            <li><a href="javascript:void(0)" @click="open_signin_window">帳戶</a></li>
+            <li><a href="javascript:void(0)" @click="open_travel_window">行程</a></li>
             <li><a href="">聊天</a></li>
             <li><a href="">通知</a></li>
             <li><a href="">下載</a></li>
             <li><a href="">關於我們</a></li>
         </ul>
     </nav>
+    <div v-show="css.black_block.display" class="block" @click="close_other">
+                
+    </div>
+    <div  v-show="css.signin.display" class="signin">
+        <div class="t_group">
+            <div class="wrap">
+                <img class="icon" src='./icon.jpg'  alt="">
+                <p class="title">登入TRAPPY</p>
+            </div>
+            <div class="account">
+                <p>帳號:</p>
+                <input v-model='p_data["acc"]' type="text" name="acc" id="acc">
+            </div>
+            <div class="pwd">
+                <p>密碼:</p>
+                <input v-model='p_data["pwd"]' type="password" name="pwd" id="pwd">
+            </div>
+            <img src="./img/btn/email_lg.png" @click="mail_login">
+            <img src="./img/btn/fb_lg.png" alt="">
+            <img src="./img/btn/google_lg.png" alt="">
+            
+        
+        </div>
+    </div>
+
+    <div  v-show="css.top_anno.display" class="top_anno">
+        <div class="t_group">
+            <img class="icon" src='./icon.jpg'  alt=""> 
+            <p class="title">TRAPPY 規劃</p>
+        </div>
+        <img class="map_icon" src="./map_icon.png" alt="">
+        <p class="intro">只需選擇目的地與出發日期就能規劃旅遊行程</p>
+        <a class="button" href="#">建立行程</a>
+        <a class="text" href="#">看其他人去哪裡玩</a>
+    </div>
 
     <div class="signup">
         <div class="container">
@@ -131,5 +168,7 @@
         
         </div>
     </div>
+    </div>
+    <script src="./js/index.js"></script>
 </body>
 </html>

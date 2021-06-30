@@ -298,10 +298,14 @@ let subnav={
     "resta":{cht:"餐廳",state:false},
     "hotel":{cht:"飯店",state:false}
 }
+let p_data={
+    acc:"",
+    pwd:""
+}
 
 let vm=new Vue({
     el:"#app",
-    data:{index:1,search_data,photo_list,css,sub_tab,subnav},
+    data:{p_data,index:1,search_data,photo_list,css,sub_tab,subnav},
     computed:{/*即刻運算*/
         selected(){
             new_arr=this.search_data.forEach(function(item,index,array){
@@ -352,6 +356,15 @@ let vm=new Vue({
                 idx==key?subnav[idx].state=true:subnav[idx].state=false        
             }
         },
+        mail_login(){
+            location.href='./signout.html'
+        },
+        go_home(){
+            location.href='./index.html'
+        },
+        go_po(){
+            location.href='./po.html'
+        }
     }
 })
 

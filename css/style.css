@@ -230,7 +230,7 @@ nav>ul>li>a{
     letter-spacing:3px;
     /* background: #aaa; */
     width: 500px;
-    height: 650px;
+    height: 750px;
     border-radius:30px;
     border: 2px;
     margin: auto;
@@ -242,7 +242,7 @@ nav>ul>li>a{
     padding-top: 50px;
     padding-bottom: 20px;
     width: 500px;
-    height: 80px;
+    height: 100px;
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -252,11 +252,10 @@ nav>ul>li>a{
     display: flex;
     align-items: center; 
     justify-content: center;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 .signin>.t_group>.wrap>.icon{
     width: 80px;
-    
     height: 80px;
     border-radius:10px;
     text-align: center;
@@ -266,6 +265,30 @@ nav>ul>li>a{
     margin: 30px;
     font-size: 40px;
     /* border: 3px solid red; */
+}
+
+.signin>.t_group>.account>p{
+    font-size: 30px;
+}
+
+.signin>.t_group>.account>input{
+    font-size: 30px;
+    margin: 10px 0;
+    width: 400px;
+    border:2px solid rgba(136, 133, 133, 0.39);
+    background-color: rgba(189, 188, 188, 0.726);
+    border-radius: 3px;
+}
+
+.signin>.t_group>.pwd>p{
+    font-size: 30px;
+}
+.signin>.t_group>.pwd>input{
+    width: 400px;
+    margin: 10px 0;
+    border:2px solid rgba(136, 133, 133, 0.39);
+    background-color: rgba(189, 188, 188, 0.726);
+    font-size: 30px;
 }
 
 .signin>.t_group>img{
