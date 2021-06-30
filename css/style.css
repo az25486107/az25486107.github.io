@@ -173,6 +173,10 @@ nav>ul>li>a{
     border-right-style: none;
 }
 
+.search>input:focus{
+    outline: none;
+}
+
 .search>.fa-search{
     height: 60px;
     line-height: 60px;
