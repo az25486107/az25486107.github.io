@@ -31,6 +31,64 @@ let main_nav=[
     {name:"關於我們",href:"javascript:void(0)",action:"open_acc_window"},
 ]
 
+
+Vue.component("article_page",{
+    template:
+    `<div>
+    <p class="title">熱門文章</p>
+    <ul>
+        <li>
+            <img src='https://picsum.photos/400/250?random=4' alt="">
+            <div class="text">
+                <div class='title'> 追求小學，新型暫無百度能夠所說印刷面對，理由程度大家都 </div>
+                <div class='content'>地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。</div>
+                <div class="comment">
+                    <i class="fas fa-chart-line"></i><span>2808</span>
+                    <i class="fas fa-heart"></i><span>2808</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <img src='https://picsum.photos/400/250?random=3' alt="">
+            <div class="text">
+                <div class='title'> 追求小學，新型暫無百度能夠所說印刷面對，理由程度大家都 </div>
+                <div class='content'>地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。</div>
+                <div class="comment">
+                    <i class="fas fa-chart-line"></i><span>2808</span>
+                    <i class="fas fa-heart"></i><span>2808</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <img src='https://picsum.photos/400/250?random=2' alt="">
+            <div class="text">
+                <div class='title'> 追求小學，新型暫無百度能夠所說印刷面對，理由程度大家都 </div>
+                <div class='content'>地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。</div>
+                <div class="comment">
+                    <i class="fas fa-chart-line"></i><span>2808</span>
+                    <i class="fas fa-heart"></i><span>2808</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <img src='https://picsum.photos/400/250?random=1' alt="">
+            <div class="text">
+                <div class='title'> 追求小學，新型暫無百度能夠所說印刷面對，理由程度大家都 </div>
+                <div class='content'>地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。</div>
+                <div class="comment">
+                    <i class="fas fa-chart-line"></i><span>2808</span>
+                    <i class="fas fa-heart"></i><span>2808</span>
+                </div>
+            </div>
+        </li>
+        <li><a class="morSe_btn" href="">查看更多</a></li>
+    </ul>
+    </div>
+    `
+})
+
+
+
 let vm=new Vue({
     el:"#app",
     data:{index:1,search_data,photo_list,css},
