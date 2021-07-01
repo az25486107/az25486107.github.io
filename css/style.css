@@ -618,6 +618,37 @@ a.text{
     box-shadow: none;
 }
 
+.sub_page>.sect>ul.hotel{
+    margin: 0 auto;
+    width: 960px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.sub_page>.sect>ul.hotel>li.h_class{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+.sub_page>.sect>ul.hotel>li.h_class>img{
+    border-radius: 10px;
+}
+
+.sub_page>.sect>ul.hotel>li.h_class>p.title{
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 5px;
+}
+
+.sub_page>.sect>ul.hotel>li.h_class>p.star{
+    font-size: 15px;
+    font-weight: bolder;
+    margin: 5px;
+}
+
 
 .more_btn{ 
     margin: auto;
