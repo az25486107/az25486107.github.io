@@ -264,24 +264,21 @@ let test_article={
             view_count:3,
             title:"熱門飯店",
             source:[
-                {src:"https://picsum.photos/400/250?random=143",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=263",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=343",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=1453",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=1453",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=1843",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=143",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=263",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=343",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=1453",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=1453",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=1843",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=143",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=263",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=343",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=1453",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=1453",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=1843",title:"追求小學，新型暫無百度能夠所說印刷面對"},
+                {src:'https://picsum.photos/300/400?random=234',title:"天野1飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像⭐"},
+                {src:'https://picsum.photos/300/400?random=143',title:"天野2飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像"},
+                {src:'https://picsum.photos/300/400?random=14',title:"天野3飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像"},
+                {src:'https://picsum.photos/300/400?random=243',title:"天野4飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像⭐"},
+                {src:'https://picsum.photos/300/400?random=143',title:"天野5飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像"},
+                {src:'https://picsum.photos/300/400?random=41',title:"天野6飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像"},
+                {src:'https://picsum.photos/300/400?random=4143',title:"天野7飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像"},
+                {src:'https://picsum.photos/300/400?random=144',title:"天野8飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像"},
+                {src:'https://picsum.photos/300/400?random=2443',title:"天野1飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像⭐"},
+                {src:'https://picsum.photos/300/400?random=414344',title:"天野2飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像"},
+                {src:'https://picsum.photos/300/400?random=144',title:"天野3飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像"},
+                {src:'https://picsum.photos/300/400?random=2443',title:"天野4飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像⭐"},
+                {src:'https://picsum.p4hotos/300/400?random=41443',title:"天野5飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像"},
+                {src:'https://picsum.photos/300/400?random=144',title:"天野6飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像"},
+                {src:'https://picsum.photos/300/400?random=4413',title:"天野7飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像"},
             ],
         },
         new:
@@ -290,24 +287,21 @@ let test_article={
             view_count:3,
             title:"最新飯店",
             source:[
-                {src:"https://picsum.photos/400/250?random=164",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=264",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=364",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=1654",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=1654",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=1644",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=164",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=264",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=364",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=1654",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=1654",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=1644",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=164",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=264",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=364",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=1654",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=654",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=1644",title:"追求小學，新型暫無百度能夠所說印刷面對"},
+                {src:'https://picsum.photos/300/400?random=23',title:"天野1飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像⭐"},
+                {src:'https://picsum.photos/300/400?random=13',title:"天野2飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像"},
+                {src:'https://picsum.photos/300/400?random=1',title:"天野3飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像"},
+                {src:'https://picsum.photos/300/400?random=23',title:"天野4飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像⭐"},
+                {src:'https://picsum.photos/300/400?random=13',title:"天野5飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像"},
+                {src:'https://picsum.photos/300/400?random=1',title:"天野6飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像"},
+                {src:'https://picsum.photos/300/400?random=143',title:"天野7飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像"},
+                {src:'https://picsum.photos/300/400?random=14',title:"天野8飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像"},
+                {src:'https://picsum.photos/300/400?random=243',title:"天野1飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像⭐"},
+                {src:'https://picsum.photos/300/400?random=134',title:"天野2飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像"},
+                {src:'https://picsum.photos/300/400?random=14',title:"天野3飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像"},
+                {src:'https://picsum.photos/300/400?random=243',title:"天野4飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像⭐"},
+                {src:'https://picsum.photos/300/400?random=143',title:"天野5飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像"},
+                {src:'https://picsum.photos/300/400?random=14',title:"天野6飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像"},
+                {src:'https://picsum.photos/300/400?random=413',title:"天野7飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像"},
             ],
         }
     }
@@ -402,27 +396,47 @@ Vue.component("resta_page",{
     }
 })
 
+let len=Math.ceil(test_article.hotel.hot.source.length/3)
 Vue.component("hotel_page",{
     data:function(){
-        return {test_article:test_article[this.subclass][this.subname]}
+        return {test_article:test_article[this.subclass][this.subname],
+                span:846,now_index:0,len}
     },
     props:["subname","subclass"],
+    computed:{
+        computed_left(){
+            return {
+                "left":(-this.now_index*this.span)+"px",
+            }
+        }
+    },
     template:
-    `<div class="sect">
+    `   <div class="sect">
         <p class="title">{{test_article.title}}</p>
-        <ul class="hotel">
-            <li class="h_class" v-for="(item,key) in test_article.source">
-                <img :src='item.src'>
-                <p class="title">{{item.title}}</p>
-                <p class="star"><span>評價:</span>{{item.star}}</p>
-            </li>
-        </ul>
+        <div class="ranbo">
+            <div class="btn_left" @click="delta(-1)"></div>
+            <div class="pic">
+                <ul class="nav" :style="computed_left">
+                    <li v-for="temp in test_article.source">
+                        <img :src="temp.src" alt="">
+                        <div class="info">
+                            <p class="title">{{temp.title}}</p>
+                            <p class="rate">{{temp.description}}</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn_right" @click="delta(1)"></div>
+        </div>
     </div>`,
     methods:{
         more_count(){
             this.test_article.view_count+=3
             if(this.test_article.view_count>=this.test_article.source.length)
                 this.test_article.end_state=false
+        },
+        delta(d){
+            this.now_index=(this.now_index+d+len)%len;
         }
     }
 })

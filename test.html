@@ -2,41 +2,195 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-workpatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
     <link href="./css/style.css" rel="stylesheet">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.9/vue.js' integrity='sha512-o9SZrtqlGkpa7EF+dDrNjEdRFFYhymlrBzDKpolHNolxsyx0IcXAbEm9i1e8QpoiMgEdKZVtY8XiK1t8i6jVDA==' crossorigin='anonymous'></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;700&display=swap" rel="stylesheet">
     <style>
-        ul{
+        *{
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        .ranbo{
+            width: 960px;
+            /* position: relative; */
             display: flex;
-            border: 1px solid blue;
-            /* justify-content: center; */
+            flex-direction: row;
+            justify-content: space-around;
+            
         }
-        ul>li{
-           margin: 0;
-           padding: 0;
-           width: 200px;
-           flex-basis: 5px;
-           height: 800px;
-           background: orange; 
-           flex-grow: 2;
-           list-style: none;
-           border: 2px solid black;
+        .pic{
+            top: 100px;
+            overflow-y: hidden;
+            overflow-x: hidden;
+            width:900px;
+            margin: 0 auto;
+            height:990px;
         }
-        ul>li:first-child{
-            flex-grow: 1;
+        .pic>.nav {
+            top: 100px;
+            width: 100%;
+            position: relative;
+            display: flex;
+        }
+        .pic>.nav>li {
+            display: flex;
+            flex-direction: column;
+            width: 268px;
+            text-align: center;
+            background:white;
+            margin: 5px 5px;
+            border: 2px solid #ccc;
+            transform: translateY(0px);
+            transition: 0.5s;
+        }
+
+        .pic>.nav>li>img {
+            width: 100%;
+            vertical-align: middle;
+        }
+        .pic>.nav>li>.info {
+            width: 268px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .pic>.nav>li>.info>p.title {
+            font-size: 30px;
+            width: 228px;
+            text-align: center;
+            font-weight: bolder;
+            margin: 2px auto;
+            padding: 0 10px;
+            border-bottom: 1px solid #888;
+            padding-bottom:.3em;
+            margin-bottom: .5em;
+        }
+        .pic>.nav>li>.info>p.rate {
+            line-height: 1.6;
+            position: relative;
+            font-size: 10px;
+            padding: 20px;
+        }
+        .pic>.nav>li>.info>p.rate:before{
+            content:'';
+            position: absolute;
+            width: 0;
+            height: 0;
+            left: 0;
+            top: 0;
+            border-top:50px solid transparent;
+            border-left:134px solid white;
+            border-right:134px solid white;
+            transform: translateY(-214%);
+        }
+
+        .pic>.nav>li:hover{
+            transform: translateY(-50px);
+        }
+        .pic>.nav>li:hover .info{
+            background-image: linear-gradient(0deg,rgb(255, 161, 161),rgb(207, 137, 137));
+        }
+        .pic>.nav>li:hover p.rate:before{
+            border-left:134px solid rgb(207, 137, 137);
+            border-right:134px solid rgb(207, 137, 137);
+        }
+
+        .ranbo>.btn_left{
+            top: 300px;
+            left: 0px;
+            /* position: relative; */
+            align-self:center;
+            height:0px;
+            margin: 0 20px;
+            border-style: solid;
+            border-width: 15px 20px 15px 0;
+            border-color: transparent #000000 transparent transparent;
+        }
+        .ranbo>.btn_right{
+            top: 300px;
+            right: 0px;
+            /* position: relative; */
+            align-self:center;
+            height:0px;
+            margin: 0 20px;
+            border-style: solid;
+            border-width: 15px 0 15px 20px;
+            border-color: transparent transparent transparent #000000;
+        }
+        .btn_group>.list{
+            display: flex;
+            flex-direction: row;
+            margin: 0 20px;
+        }
+        div.circle_in_black{
+            width:20px;
+            height:20px;
+            margin: 0 5px;
+            border-radius:999em;
+            background-color:rgba(136, 134, 134, 0.835);
         }
     </style>
 </head>
 <body>
-    <ul class="test">
-        <li>1感謝能源之處小遊戲，典型信箱，覺得大學生明星愛情紛紛背景航空培訓命運所有，全球女士求助新型怎麼還沒運用首次加油事件根本，不好中文大概試題事實上滿意消費者社區色彩加油，共同大學生一本責任看出拿出用途，聯繫方式作品體驗本月分為一定會，多多天堂，有權來的持續級。 </li>
-        <li>2感謝能源之處小遊戲，典型信箱，覺得大學生明星愛情紛紛背景航空培訓命運所有，全球女士求助新型怎麼還沒運用首次加油事件根本，不好中文大概試題事實上滿意消費者社定會，多多天堂，有權來的持續級。</li>
-        <li>3感謝能源之處小遊戲，典型信箱，覺得大學生明星愛情紛紛背景航空培訓命運所有，全球女士求助新型怎麼還沒運用首次加油事件根本，不好中文大概試題事實上滿意消費者社區色彩加油，共同大學生一本責任看出拿出用途，聯繫方式作品體驗本月分為一定會，多多天堂，有權來的持續級。</li>
-        <li>4感謝能源之處小遊戲，典型信箱，覺得大學生明星愛情紛紛背景航空培訓命運所有，全球女士求助新型怎麼還沒運用首次加油事件根本，不好中文大概試題事實上滿意消費者社區色彩加油，共同大學生一本責任看出拿出用途，聯繫方式作品體驗本月分為一定會，多多天堂，有權來的持續級。</li>
-        <!-- <li>5感謝能源之處小遊戲，典型信箱，覺得大學生明星愛情紛紛背景航空培訓命運所有，全球女士求助新型怎麼還沒運用首次加油事件根本，不好中文大概試題事實上滿意消費者社區色彩加油，共同大學生一本責任看出拿出用途，聯繫方式作品體驗本月分為一定會，多多天堂，有權來的持續級。</li>
-        <li>6</li>
-        <li>7感謝能源之處小遊戲，典型信箱，覺得大學生明星愛情紛紛背景航空培訓命運所有，全球女士求助新型怎麼還沒運用首次加油事件根本，不好中文大概試題事實上滿意消費者社區色彩加油，共同大學生一本責任看出拿出用途，聯繫方式作品體驗本月分為一定會，多多天堂，有權來的持續級。</li> -->
-    </ul>
+    <div id="app">
+        <div class="ranbo">
+            <div class="btn_left" @click="delta(-1)"></div>
+            <div class="pic">
+                <ul class="nav" :style="computed_left">
+                    <li v-for="temp in work">
+                        <img :src="temp.src" alt="">
+                        <div class="info">
+                            <p class="title">{{temp.title}}</p>
+                            <p class="rate">婚姻多個尋求恐怕鈴聲，理念咱們衝擊相對面積分析說是線上任何成績那麼多蔬菜一起最大，一座樓上生成畢業比較話題，記得參數合適把它金錢第一個本站主義整體仔細十二重複首次治理，系統選擇好像中間相冊想要曾經世界上開心回家共同新手關於思路，種種需求感到，故障階段，直。</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn_right" @click="delta(1)"></div>
+        </div>
+    </div>
+    <script>
+        let work=[
+            {src:'https://picsum.photos/300/400?random=23',title:"天野1飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像，而您對休憩空間與旅行期待，我們也早已籌畫了驚喜給您，我們深信這會是您所喜愛的旅行要素，在這裡，樂窩金門。休憩空間是最精彩的規畫，有您對季節的所有期待滿足，也有超過民宿旅店所能給予的驚喜與精彩，這是您能給自已、朋友、家人與任何同行者的共享，無邊無際的星空與長夜，甚至比想像還多一些的實現，遇見樂窩，發現生活的美一天。⭐"},
+            {src:'https://picsum.photos/300/400?random=13',title:"天野2飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像，而您對休憩空間與旅行期待，我們也早已籌畫了驚喜給您，我們深信這會是您所喜愛的旅行要素，在這裡，樂窩金門。休憩空間是最精彩的規畫，有您對季節的所有期待滿足，也有超過民宿旅店所能給予的驚喜與精彩，這是您能給自已、朋友、家人與任何同行者的共享，無邊無際的星空與長夜，甚至比想像還多一些的實現，遇見樂窩，發現生活的美一天。"},
+            {src:'https://picsum.photos/300/400?random=1',title:"天野3飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像，而您對休憩空間與旅行期待，我們也早已籌畫了驚喜給您，我們深信這會是您所喜愛的旅行要素，在這裡，樂窩金門。休憩空間是最精彩的規畫，有您對季節的所有期待滿足，也有超過民宿旅店所能給予的驚喜與精彩，這是您能給自已、朋友、家人與任何同行者的共享，無邊無際的星空與長夜，甚至比想像還多一些的實現，遇見樂窩，發現生活的美一天。"},
+            {src:'https://picsum.photos/300/400?random=23',title:"天野4飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像，而您對休憩空間與旅行期待，我們也早已籌畫了驚喜給您，我們深信這會是您所喜愛的旅行要素，在這裡，樂窩金門。休憩空間是最精彩的規畫，有您對季節的所有期待滿足，也有超過民宿旅店所能給予的驚喜與精彩，這是您能給自已、朋友、家人與任何同行者的共享，無邊無際的星空與長夜，甚至比想像還多一些的實現，遇見樂窩，發現生活的美一天。⭐"},
+            {src:'https://picsum.photos/300/400?random=13',title:"天野5飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像，而您對休憩空間與旅行期待，我們也早已籌畫了驚喜給您，我們深信這會是您所喜愛的旅行要素，在這裡，樂窩金門。休憩空間是最精彩的規畫，有您對季節的所有期待滿足，也有超過民宿旅店所能給予的驚喜與精彩，這是您能給自已、朋友、家人與任何同行者的共享，無邊無際的星空與長夜，甚至比想像還多一些的實現，遇見樂窩，發現生活的美一天。"},
+            {src:'https://picsum.photos/300/400?random=1',title:"天野6飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像，而您對休憩空間與旅行期待，我們也早已籌畫了驚喜給您，我們深信這會是您所喜愛的旅行要素，在這裡，樂窩金門。休憩空間是最精彩的規畫，有您對季節的所有期待滿足，也有超過民宿旅店所能給予的驚喜與精彩，這是您能給自已、朋友、家人與任何同行者的共享，無邊無際的星空與長夜，甚至比想像還多一些的實現，遇見樂窩，發現生活的美一天。"},
+            {src:'https://picsum.photos/300/400?random=143',title:"天野7飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像，而您對休憩空間與旅行期待，我們也早已籌畫了驚喜給您，我們深信這會是您所喜愛的旅行要素，在這裡，樂窩金門。休憩空間是最精彩的規畫，有您對季節的所有期待滿足，也有超過民宿旅店所能給予的驚喜與精彩，這是您能給自已、朋友、家人與任何同行者的共享，無邊無際的星空與長夜，甚至比想像還多一些的實現，遇見樂窩，發現生活的美一天。"},
+            {src:'https://picsum.photos/300/400?random=14',title:"天野8飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像，而您對休憩空間與旅行期待，我們也早已籌畫了驚喜給您，我們深信這會是您所喜愛的旅行要素，在這裡，樂窩金門。休憩空間是最精彩的規畫，有您對季節的所有期待滿足，也有超過民宿旅店所能給予的驚喜與精彩，這是您能給自已、朋友、家人與任何同行者的共享，無邊無際的星空與長夜，甚至比想像還多一些的實現，遇見樂窩，發現生活的美一天。"},
+            {src:'https://picsum.photos/300/400?random=243',title:"天野1飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像，而您對休憩空間與旅行期待，我們也早已籌畫了驚喜給您，我們深信這會是您所喜愛的旅行要素，在這裡，樂窩金門。休憩空間是最精彩的規畫，有您對季節的所有期待滿足，也有超過民宿旅店所能給予的驚喜與精彩，這是您能給自已、朋友、家人與任何同行者的共享，無邊無際的星空與長夜，甚至比想像還多一些的實現，遇見樂窩，發現生活的美一天。⭐"},
+            {src:'https://picsum.photos/300/400?random=134',title:"天野2飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像，而您對休憩空間與旅行期待，我們也早已籌畫了驚喜給您，我們深信這會是您所喜愛的旅行要素，在這裡，樂窩金門。休憩空間是最精彩的規畫，有您對季節的所有期待滿足，也有超過民宿旅店所能給予的驚喜與精彩，這是您能給自已、朋友、家人與任何同行者的共享，無邊無際的星空與長夜，甚至比想像還多一些的實現，遇見樂窩，發現生活的美一天。"},
+            {src:'https://picsum.photos/300/400?random=14',title:"天野3飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像，而您對休憩空間與旅行期待，我們也早已籌畫了驚喜給您，我們深信這會是您所喜愛的旅行要素，在這裡，樂窩金門。休憩空間是最精彩的規畫，有您對季節的所有期待滿足，也有超過民宿旅店所能給予的驚喜與精彩，這是您能給自已、朋友、家人與任何同行者的共享，無邊無際的星空與長夜，甚至比想像還多一些的實現，遇見樂窩，發現生活的美一天。"},
+            {src:'https://picsum.photos/300/400?random=243',title:"天野4飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像，而您對休憩空間與旅行期待，我們也早已籌畫了驚喜給您，我們深信這會是您所喜愛的旅行要素，在這裡，樂窩金門。休憩空間是最精彩的規畫，有您對季節的所有期待滿足，也有超過民宿旅店所能給予的驚喜與精彩，這是您能給自已、朋友、家人與任何同行者的共享，無邊無際的星空與長夜，甚至比想像還多一些的實現，遇見樂窩，發現生活的美一天。⭐"},
+            {src:'https://picsum.photos/300/400?random=143',title:"天野5飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像，而您對休憩空間與旅行期待，我們也早已籌畫了驚喜給您，我們深信這會是您所喜愛的旅行要素，在這裡，樂窩金門。休憩空間是最精彩的規畫，有您對季節的所有期待滿足，也有超過民宿旅店所能給予的驚喜與精彩，這是您能給自已、朋友、家人與任何同行者的共享，無邊無際的星空與長夜，甚至比想像還多一些的實現，遇見樂窩，發現生活的美一天。"},
+            {src:'https://picsum.photos/300/400?random=14',title:"天野6飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像，而您對休憩空間與旅行期待，我們也早已籌畫了驚喜給您，我們深信這會是您所喜愛的旅行要素，在這裡，樂窩金門。休憩空間是最精彩的規畫，有您對季節的所有期待滿足，也有超過民宿旅店所能給予的驚喜與精彩，這是您能給自已、朋友、家人與任何同行者的共享，無邊無際的星空與長夜，甚至比想像還多一些的實現，遇見樂窩，發現生活的美一天。"},
+            {src:'https://picsum.photos/300/400?random=413',title:"天野7飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像，而您對休憩空間與旅行期待，我們也早已籌畫了驚喜給您，我們深信這會是您所喜愛的旅行要素，在這裡，樂窩金門。休憩空間是最精彩的規畫，有您對季節的所有期待滿足，也有超過民宿旅店所能給予的驚喜與精彩，這是您能給自已、朋友、家人與任何同行者的共享，無邊無際的星空與長夜，甚至比想像還多一些的實現，遇見樂窩，發現生活的美一天。"},
+        ]
+        
+
+        let len=Math.ceil(work.length/3)
+        new Vue({
+            el:"#app",
+            data:{work,span:846,now_index:0,len},
+            computed:{
+                computed_left(){
+                    return {
+                        "left":(-this.now_index*this.span)+"px",
+                    }
+                }
+            },
+            methods:{
+                delta(d){
+                    this.now_index=(this.now_index+d+len)%len;
+                }
+            }
+            
+        })
+    </script>
 </body>
 </html>

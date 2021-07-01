@@ -25,10 +25,11 @@
                     <li><a href="">關於我們</a></li>
                 </ul>
             </nav>
-            
-            <transition-group name="fade" class="imgList" tag="div">
-                <img class="banner" v-for='(pic,idx) in photo_list' :src="pic.src" v-show="index===idx" :key="idx" alt="">
-            </transition-group>
+            <div class="album">
+                <transition-group name="fade" class="imgList" tag="div">
+                    <img class="banner" v-for='(pic,idx) in photo_list' :src="pic.src" v-show="index===idx" :key="idx" alt="">
+                </transition-group>
+            </div>
 
                 <!-- <img class="banner" src='https://picsum.photos/960/500' alt=""> -->
             <div class="search">
