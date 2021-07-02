@@ -27,7 +27,7 @@
             </nav>
             <div class="album">
                 <transition-group name="fade" class="imgList" tag="div">
-                    <img class="banner" v-for='(pic,idx) in photo_list' :src="pic.src" v-show="index===idx" :key="idx" alt="">
+                    <img class="banner" v-for='(pic,idx) in photo_list' src="./img/123.png" :style='rndbg(idx)' v-show='idx===index' :key="idx" alt="">
                 </transition-group>
             </div>
 

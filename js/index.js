@@ -467,7 +467,7 @@ let vm=new Vue({
                 }
             })
             return this.search_data
-        }
+        },
     },
     mounted(){
         this.intervalId = setInterval(this.scroll, 5000)
@@ -516,6 +516,10 @@ let vm=new Vue({
         },
         go_po(){
             location.href='./po.html'
+        },
+        rndbg(x){
+            return {"background-image":'url('+this.photo_list[x].src+')'}
+            // return {"background-image":'url(https://picsum.photos/960/500)'}
         }
     }
 })
