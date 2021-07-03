@@ -1,15 +1,10 @@
-/* @font-face {
+@font-face {
     font-family: 'oxxo';
-    src: url('../fontsGenSenRounded-B.ttc'),
-    url('../fonts/GenSenRounded-EL.ttc'),
-    url('../fonts/GenSenRounded-H.ttf'),
-    url('../fonts/GenSenRounded-L.ttc'),
-    url('../fonts/GenSenRounded-M.ttc'),
-    url('../fonts/GenSenRounded-R.ttc')    
-  } */
+    src: url('../fonts/jf-openhuninn-1.1.ttf');
+    }
 
-*{
-    /* font-family:'oxxo'; */
+body{
+    font-family:'oxxo';
     margin: 0;
     padding: 0;
 }
@@ -22,11 +17,11 @@
 }
 .fade-enter,
 .fade-leave-to{
-    opacity: 0;
+    opacity: 0.1;
 }
 .fade-enter-active,
 .fade-enter-leave{
-    transition:opacity 1s;
+    transition:opacity 2s;
 }
 
 
@@ -84,7 +79,7 @@ nav>ul>li>a{
 
 .search{
     position: absolute;
-    top:450px;
+    top:410px;
     left: 50%;
     transform: translate(-50%);
     display: flex;
@@ -221,6 +216,8 @@ nav>ul>li>a{
 
 .album{
     position: relative;
+    width: 960px;
+    height: 500px;
 }
 
 .banner{
