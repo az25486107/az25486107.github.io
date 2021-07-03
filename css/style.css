@@ -697,6 +697,7 @@ a.text{
 
 .morSe_btn{
     margin: auto;
+    display: block;
     /* margin-top: 60px; */
     padding: 20px 20px;
     /* width:900px; */
