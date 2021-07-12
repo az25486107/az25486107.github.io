@@ -1,4 +1,5 @@
 
+
 let search_data=[
     {type:'類型 ▼',selected:true},
     {type:'餐廳',selected:false},
@@ -150,24 +151,24 @@ let test_article={
             view_count:4,
             title:"最新景點",
             source:[
-                {src:"https://picsum.photos/400/250?random=144",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=264",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=344",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=1454",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=1454",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=1844",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=144",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=264",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=344",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=1454",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=1454",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=1844",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=144",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=264",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=344",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=1454",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=1454",title:"追求小學，新型暫無百度能夠所說印刷面對"},
-                {src:"https://picsum.photos/400/250?random=1844",title:"追求小學，新型暫無百度能夠所說印刷面對"},
+                // {src:"https://picsum.photos/400/250?random=144",title:"追求小學，新型暫無百度能夠所說印刷面對"},
+                // {src:"https://picsum.photos/400/250?random=264",title:"追求小學，新型暫無百度能夠所說印刷面對"},
+                // {src:"https://picsum.photos/400/250?random=344",title:"追求小學，新型暫無百度能夠所說印刷面對"},
+                // {src:"https://picsum.photos/400/250?random=1454",title:"追求小學，新型暫無百度能夠所說印刷面對"},
+                // {src:"https://picsum.photos/400/250?random=1454",title:"追求小學，新型暫無百度能夠所說印刷面對"},
+                // {src:"https://picsum.photos/400/250?random=1844",title:"追求小學，新型暫無百度能夠所說印刷面對"},
+                // {src:"https://picsum.photos/400/250?random=144",title:"追求小學，新型暫無百度能夠所說印刷面對"},
+                // {src:"https://picsum.photos/400/250?random=264",title:"追求小學，新型暫無百度能夠所說印刷面對"},
+                // {src:"https://picsum.photos/400/250?random=344",title:"追求小學，新型暫無百度能夠所說印刷面對"},
+                // {src:"https://picsum.photos/400/250?random=1454",title:"追求小學，新型暫無百度能夠所說印刷面對"},
+                // {src:"https://picsum.photos/400/250?random=1454",title:"追求小學，新型暫無百度能夠所說印刷面對"},
+                // {src:"https://picsum.photos/400/250?random=1844",title:"追求小學，新型暫無百度能夠所說印刷面對"},
+                // {src:"https://picsum.photos/400/250?random=144",title:"追求小學，新型暫無百度能夠所說印刷面對"},
+                // {src:"https://picsum.photos/400/250?random=264",title:"追求小學，新型暫無百度能夠所說印刷面對"},
+                // {src:"https://picsum.photos/400/250?random=344",title:"追求小學，新型暫無百度能夠所說印刷面對"},
+                // {src:"https://picsum.photos/400/250?random=1454",title:"追求小學，新型暫無百度能夠所說印刷面對"},
+                // {src:"https://picsum.photos/400/250?random=1454",title:"追求小學，新型暫無百度能夠所說印刷面對"},
+                // {src:"https://picsum.photos/400/250?random=1844",title:"追求小學，新型暫無百度能夠所說印刷面對"},
             ]
         }
     },
@@ -182,35 +183,35 @@ let test_article={
                     title:"龍潭豆花",
                     address:"臺東縣962長濱鄉三間村水母丁1-9號",
                     content:"地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。",
-                    opentime: "10:30–19:00",
+                    phone: "10:30–19:00",
                 },
                 {
                     src:"https://picsum.photos/400/250?random=155",
                     title:"望海巴耐餐廳/咖啡",
                     address:"臺東縣962長濱鄉寧埔村烏石鼻14鄰41-3號",
                     content:"地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。",
-                    opentime: "10:30–19:00",
+                    phone: "10:30–19:00",
                 },
                 {
                     src:"https://picsum.photos/400/250?random=146",
                     title:"噶瑪蘭海產店",
                     address:"臺東縣962長濱鄉寧埔村烏石鼻14鄰41-3號",
                     content:"地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。",
-                    opentime: "10:30–19:00",
+                    phone: "10:30–19:00",
                 },
                 {
                     src:"https://picsum.photos/400/250?random=1546",
                     title:"噶瑪蘭海產店",
                     address:"臺東縣962長濱鄉寧埔村烏石鼻14鄰41-3號",
                     content:"地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。",
-                    opentime: "10:30–19:00",
+                    phone: "10:30–19:00",
                 },                
                 {
                     src:"https://picsum.photos/400/250?random=1476",
                     title:"噶瑪蘭海產店",
                     address:"臺東縣962長濱鄉寧埔村烏石鼻14鄰41-3號",
                     content:"地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。",
-                    opentime: "10:30–19:00",
+                    phone: "10:30–19:00",
                 },
             ]
         },
@@ -224,35 +225,35 @@ let test_article={
                     title:"龍潭豆花",
                     address:"臺東縣962長濱鄉三間村水母丁1-9號",
                     content:"地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。",
-                    opentime: "10:30–19:00",
+                    phone: "10:30–19:00",
                 },
                 {
                     src:"https://picsum.photos/400/250?random=1455",
                     title:"望海巴耐餐廳/咖啡",
                     address:"臺東縣962長濱鄉寧埔村烏石鼻14鄰41-3號",
                     content:"地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。",
-                    opentime: "10:30–19:00",
+                    phone: "10:30–19:00",
                 },
                 {
                     src:"https://picsum.photos/400/250?random=246",
                     title:"噶瑪蘭海產店",
                     address:"臺東縣962長濱鄉寧埔村烏石鼻14鄰41-3號",
                     content:"地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。",
-                    opentime: "10:30–19:00",
+                    phone: "10:30–19:00",
                 },
                 {
                     src:"https://picsum.photos/400/250?random=446",
                     title:"噶瑪蘭海產店",
                     address:"臺東縣962長濱鄉寧埔村烏石鼻14鄰41-3號",
                     content:"地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。",
-                    opentime: "10:30–19:00",
+                    phone: "10:30–19:00",
                 },                
                 {
                     src:"https://picsum.photos/400/250?random=546",
                     title:"噶瑪蘭海產店",
                     address:"臺東縣962長濱鄉寧埔村烏石鼻14鄰41-3號",
                     content:"地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。地方整體結合你能漸漸清晰會議，現在例如關注實驗依舊持續不久品牌我想，就不威脅自己外觀我又無人掌握相。",
-                    opentime: "10:30–19:00",
+                    phone: "10:30–19:00",
                 },
             ]
         }
@@ -264,7 +265,7 @@ let test_article={
             view_count:3,
             title:"熱門飯店",
             source:[
-                {src:'https://picsum.photos/300/400?random=234',title:"天野1飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像⭐"},
+                {src:'https://picsum.photos/300/400?random=234',title:"天野1飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘極了布丁的造型就是這麼的特別，距離海灘極了布丁的造型就是這麼的特別，距離海灘極了布丁的造型就是這麼的特別，距離海灘極了布丁的造型就是這麼的特別，距別，距離海灘極了布丁的造型就是這麼的特別，距離海灘極了布丁的造型就是這麼的特別，距離海灘極了布丁的造型就是這麼的特別，距別，距離海灘極了布丁的造型就是這麼的特別，距離海灘極了布丁的造型就是這麼的特別，距離海灘極了布丁的造型就是這麼的特別，距別，距離海灘極了布丁的造型就是這麼的特別，距離海灘極了布丁的造型就是這麼的特別，距離海灘極了布丁的造型就是這麼的特別，距別，距離海灘極了布丁的造型就是這麼的特別，距離海灘極了布丁的造型就是這麼的特別，距離海灘極了布丁的造型就是這麼的特別，距別，距離海灘極了布丁的造型就是這麼的特別，距離海灘極了布丁的造型就是這麼的特別，距離海灘極了布丁的造型就是這麼的特別，距別，距離海灘極了布丁的造型就是這麼的特別，距離海灘極了布丁的造型就是這麼的特別，距離海灘極了布丁的造型就是這麼的特別，距別，距離海灘極了布丁的造型就是這麼的特別，距離海灘極了布丁的造型就是這麼的特別，距離海灘極了布丁的造型就是這麼的特別，距別，距離海灘極了布丁的造型就是這麼的特別，距離海灘極了布丁的造型就是這麼的特別，距離海灘極了布丁的造型就是這麼的特別，距別，距離海灘極了布丁的造型就是這麼的特別，距離海灘極了布丁的造型就是這麼的特別，距離海灘極了布丁的造型就是這麼的特別，距離海灘極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像⭐"},
                 {src:'https://picsum.photos/300/400?random=143',title:"天野2飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像"},
                 {src:'https://picsum.photos/300/400?random=14',title:"天野3飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像"},
                 {src:'https://picsum.photos/300/400?random=243',title:"天野4飯店",description:"築風格是樂窩金門民宿給人視覺驚喜的第一印象，布丁色的橘牆披上黑糖色的咖啡腰帶，像極了布丁的造型就是這麼的特別，距離海灘只有650公尺的距離配合季節海風的吹撫，更讓視覺因此難以轉移，在這建築裡，有我們精心的塑造，樸素的風格、讓年輕活力的主題塑造到您的期待想像⭐"},
@@ -306,6 +307,12 @@ let test_article={
         }
     }
 }
+
+
+
+
+
+
 Vue.component("article_page",{
     data:function(){
         return {test_article:test_article[this.subclass][this.subname]}
@@ -316,7 +323,7 @@ Vue.component("article_page",{
         <ul class="post">
             <p class="title">{{test_article.title}}</p>
             <li v-for="(item,key) in test_article.source" v-show="key<test_article.view_count" >
-                <img :src=item.src alt="">
+                <img :src=item.src  onerror="this.src='https://picsum.photos/400/250?random=487'" alt="">
                 <div class="text">
                     <div class='title'>{{item.title}} </div>
                     <div class='content'>{{item.content}}</div>
@@ -340,33 +347,56 @@ Vue.component("article_page",{
     }
 })
 
+
+
+
 Vue.component("view_page",{
     data:function(){
-        return {test_article:test_article[this.subclass][this.subname]}
+        return {test_article:{}}
     },
     props:["subname","subclass"],
     template:`
         <div class="sect">
             <p class="title">{{test_article.title}}</p>
             <ul class="view">
-                <li v-for="(item,key) in test_article.source" v-show="key<test_article.view_count" ><img :src="item.src" alt=""><span>{{item.title}}</span></li>
+                <li v-for="(item,key) in test_article.source" v-show="key<test_article.view_count" ><img :src="item.src" onerror="this.src='https://picsum.photos/400/250?random=487'"><span>{{item.title}}</span></li>
                 <li class="none_box" v-show="test_article.end_state" @click="more_count" ><a class="morSe_btn" href="javascript:void(0)">查看更多</a></li>
             </ul>
         </div>
     `,
+    mounted:function(){
+        let loading_count=20
+        let title=this.subname==="hot"?"熱門景點":"最新景點"
+        axios.get('http://127.0.0.1:25555/api/attractions').then((res)=>{
+            view={
+                end_state:true,
+                view_count:4,
+                title:title,
+                source:[]
+            }
+            for(let i=0;i<loading_count;i++){
+                view["source"].push({
+                    "src":res.data[i].Atphoto,
+                    "title":res.data[i].Atname
+                })
+            }
+            this.test_article=view    
+        }) 
+    },
     methods:{
         more_count(){
             this.test_article.view_count+=4
             if(this.test_article.view_count>=this.test_article.source.length)
                 this.test_article.end_state=false
         }
+        
     }
 })
 
 
 Vue.component("resta_page",{
     data:function(){
-        return {test_article:test_article[this.subclass][this.subname]}
+        return {test_article:{}}
     },
     props:["subname","subclass"],
     template:`
@@ -378,15 +408,37 @@ Vue.component("resta_page",{
                         <p class="idx">{{key+1}}</p>
                         <p class="title">{{item.title}}</p>
                     </div>
-                    <img :src='item.src'>
+                    <img :src='item.src' onerror="this.src='https://picsum.photos/400/250?random=487'">
                     <p class="text">{{item.content}}</p>
                     <p class="address"><span>位置資訊：</span>{{item.address}}</p>
-                    <p class="worktime"><span>營業時間：</span>{{item.opentime}}</p>
+                    <p class="worktime"><span>營業時間：</span>{{item.phone}}</p>
                 </li>
                 <li class="none_box" v-show="test_article.end_state" @click="more_count" ><a class="morSe_btn" href="javascript:void(0)">查看更多</a></li>
             </ul>
         </div>
     `,
+    mounted:function(){
+        let loading_count=30
+        let title=this.subname==="hot"?"熱門餐廳":"最新餐廳"
+        axios.get('http://127.0.0.1:25555/api/restaurants').then((res)=>{
+            data={
+                end_state:true,
+                view_count:8,
+                title:title,
+                source:[]
+            }
+            for(let i=0;i<loading_count;i++){
+                data["source"].push({
+                    "src":res.data[i].Rphoto,
+                    "title":res.data[i].Rname,
+                    "content":res.data[i].Rdescription,
+                    "phone":res.data[i].Rphone,
+                    "address":res.data[i].Raddress
+                })
+            }
+            this.test_article=data
+        })
+    },
     methods:{
         more_count(){
             this.test_article.view_count+=3
@@ -399,7 +451,7 @@ Vue.component("resta_page",{
 let len=Math.ceil(test_article.hotel.hot.source.length/3)
 Vue.component("hotel_page",{
     data:function(){
-        return {test_article:test_article[this.subclass][this.subname],
+        return {test_article:{},
                 span:846,now_index:0,len}
     },
     props:["subname","subclass"],
@@ -429,6 +481,31 @@ Vue.component("hotel_page",{
             <div class="btn_right" @click="delta(1)"></div>
         </div>
     </div>`,
+    mounted:function(){
+        let loading_count=10
+        let title=this.subname==="hot"?"熱門飯店":"最新飯店"
+        axios.get("http://127.0.0.1:25555/api/hotels").then((res)=>{
+            data={
+                end_state:true,
+                view_count:8,
+                title:title,
+                source:[]
+            }
+            for(let i=0;i<loading_count;i++){
+                if (res.data[i].Hdescription.length>100){
+                    res.data[i].Hdescription=res.data[i].Hdescription.slice(0,100)+"..."
+                }
+                data["source"].push({
+                    "src":res.data[i].Hphoto,
+                    "title":res.data[i].Hname,
+                    "description":res.data[i].Hdescription,
+                    "phone":res.data[i].Hphone,
+                    "address":res.data[i].Haddress
+                })
+            }
+            this.test_article=data
+        })
+    },
     methods:{
         more_count(){
             this.test_article.view_count+=3
@@ -526,4 +603,4 @@ let vm=new Vue({
 
 
 
-// vm();
+

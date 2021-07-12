@@ -6,6 +6,7 @@
         <script src="https://kit.fontawesome.com/2a41585493.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="./css/reset.css">
         <link href="./css/style.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.js"></script>
         <title>Trappy</title>
     </head>
     <body ><div id="app">
@@ -25,9 +26,10 @@
                     <li><a href="">關於我們</a></li>
                 </ul>
             </nav>
-            <div class="album">
+            <div class="album" v-cloak>
                 <transition-group name="fade" class="imgList" tag="div">
                     <img class="banner" v-for='(pic,idx) in photo_list' src="./img/123.png" :style='rndbg(idx)' v-show='idx===index' :key="idx" alt="">
+                    <!-- <img class="banner" v-for='(pic,idx) in photo_list' src="./img/123.png" :style='rndbg(idx)' :key="idx" alt=""> -->
                 </transition-group>
             </div>
 
