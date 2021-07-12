@@ -1,5 +1,6 @@
 
-
+// let host="http://127.0.0.1:3000"
+let host="https://trappyuchi.herokuapp.com"
 let search_data=[
     {type:'類型 ▼',selected:true},
     {type:'餐廳',selected:false},
@@ -367,7 +368,7 @@ Vue.component("view_page",{
     mounted:function(){
         let loading_count=20
         let title=this.subname==="hot"?"熱門景點":"最新景點"
-        axios.get('http://127.0.0.1:25555/api/attractions').then((res)=>{
+        axios.get(host+'/api/attractions').then((res)=>{
             view={
                 end_state:true,
                 view_count:4,
@@ -420,7 +421,7 @@ Vue.component("resta_page",{
     mounted:function(){
         let loading_count=30
         let title=this.subname==="hot"?"熱門餐廳":"最新餐廳"
-        axios.get('http://127.0.0.1:25555/api/restaurants').then((res)=>{
+        axios.get(host+'/api/restaurants').then((res)=>{
             data={
                 end_state:true,
                 view_count:8,
@@ -484,7 +485,7 @@ Vue.component("hotel_page",{
     mounted:function(){
         let loading_count=10
         let title=this.subname==="hot"?"熱門飯店":"最新飯店"
-        axios.get("http://127.0.0.1:25555/api/hotels").then((res)=>{
+        axios.get(host+"/api/hotels").then((res)=>{
             data={
                 end_state:true,
                 view_count:8,
