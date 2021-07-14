@@ -1,6 +1,5 @@
-
-// let host="http://127.0.0.1:3000"
-let host="https://trappyuchi.herokuapp.com"
+let host="http://127.0.0.1:3000"
+//let host="https://trappyuchi.herokuapp.com"
 let search_data=[
     {type:'類型 ▼',selected:true},
     {type:'餐廳',selected:false},
@@ -528,14 +527,18 @@ let subnav={
     "resta":{cht:"餐廳",state:false},
     "hotel":{cht:"飯店",state:false}
 }
-let p_data={
-    acc:"",
-    pwd:""
+let user_data={
+    Uaccount:"",
+    Upwd:""
+}
+let error_msg={
+    "acc":"",
+    "pwd":""
 }
 
 let vm=new Vue({
     el:"#app",
-    data:{p_data,index:1,search_data,photo_list,css,sub_tab,subnav},
+    data:{user_data,error_msg,index:1,search_data,photo_list,css,sub_tab,subnav},
     computed:{/*即刻運算*/
         selected(){
             new_arr=this.search_data.forEach(function(item,index,array){
@@ -586,6 +589,20 @@ let vm=new Vue({
                 idx==key?subnav[idx].state=true:subnav[idx].state=false        
             }
         },
+        signup(){
+            axios.post(host+"/api/users/",{Uaccount:user_data["Uaccount"]}).then(
+                (res)=>{
+                    console.log(res)
+                    if(res["data"] ==true){
+                        error_msg["acc"]="該用戶名已被使用"
+                    }else{
+                        axios.post(host+"/api/users/create",user_data)
+                        error_msg["acc"]=""
+                        alert("註冊成功")
+                    }
+                }
+            )
+        },
         mail_login(){
             location.href='./signout.html'
         },
@@ -599,6 +616,7 @@ let vm=new Vue({
             return {"background-image":'url('+this.photo_list[x].src+')'}
             // return {"background-image":'url(https://picsum.photos/960/500)'}
         }
+
     }
 })
 

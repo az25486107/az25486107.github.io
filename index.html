@@ -2,7 +2,9 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
         <script src="https://kit.fontawesome.com/2a41585493.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="./css/reset.css">
         <link href="./css/style.css" rel="stylesheet">
@@ -56,16 +58,17 @@
                         <p class="title">登入TRAPPY</p>
                     </div>
                     <div class="account">
-                        <p>帳號:</p>
-                        <input v-model='p_data["acc"]' type="text" name="acc" id="acc">
+                        <p>帳號:<span class="notice">{{error_msg["acc"]}}</span></p>
+                        <input v-model="user_data['Uaccount']" type="text" id="acc">
                     </div>
                     <div class="pwd">
-                        <p>密碼:</p>
-                        <input v-model='p_data["pwd"]' type="password" name="pwd" id="pwd">
+                        <p>密碼:<span class="notice">{{error_msg["pwd"]}}</span></p>
+                        <input v-model="user_data['Upwd']" type="password" id="pwd">
                     </div>
                     <img src="./img/btn/email_lg.png" @click="mail_login">
                     <img src="./img/btn/fb_lg.png" alt="">
                     <img src="./img/btn/google_lg.png" alt="">
+                    <img src="./img/btn/signup.png"@click="signup">
                     
                 
                 </div>
