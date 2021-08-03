@@ -7,46 +7,69 @@
         <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
         <script src="https://kit.fontawesome.com/2a41585493.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="./css/reset.css">
-        <link href="./css/style.css" rel="stylesheet">
+        <link href="./style/style2.css" rel="stylesheet">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.js"></script>
         <title>Trappy</title>
     </head>
-    <body ><div id="app">
-        <div class="contaniner">
-            <!-- <img src='https://picsum.photos/200/200' alt=""> -->
+    <body >
+        <div id="app">
             <nav>
                 <div class="logo_group" @click="go_home">
                     <img class="icon" src="./icon.jpg" alt="">
                     <p class="title">TRAPPY</p>
                 </div>
-                <ul>    
-                    <li><a href="javascript:void(0)" @click="open_signin_window">帳戶</a></li>
-                    <li><a href="javascript:void(0)" @click="open_travel_window">行程</a></li>
-                    <li><a href="">聊天</a></li>
-                    <li><a href="">通知</a></li>
-                    <li><a href="">下載</a></li>
-                    <li><a href="">關於我們</a></li>
-                </ul>
+                <div class="link">
+                    <router-link to="/">帳戶</router-link>
+                    <router-link to="/">行程</router-link>
+                    <router-link to="/">聊天</router-link>
+                    <router-link to="/">通知</router-link>
+                    <router-link to="/">下載</router-link>
+                    <router-link to="/">關於我們</router-link>
+                </div>
             </nav>
-            <div class="album" v-cloak>
-                <transition-group name="fade" class="imgList" tag="div">
-                    <img class="banner" v-for='(pic,idx) in photo_list' src="./img/123.png" :style='rndbg(idx)' v-show='idx===index' :key="idx" alt="">
-                    <!-- <img class="banner" v-for='(pic,idx) in photo_list' src="./img/123.png" :style='rndbg(idx)' :key="idx" alt=""> -->
-                </transition-group>
-            </div>
+            <main>
+                <div id="banner">
+                    <div class="album" v-cloak>
+                        <transition-group name="fade" class="imgList" tag="div">
+                            <img class="banner" v-for='(pic,idx) in photo_list' src="./img/123.png" :style='rndbg(idx)' v-show='idx===index' :key="idx" alt="">
+                            <!-- <img class="banner" v-for='(pic,idx) in photo_list' src="./img/123.png" :style='rndbg(idx)' :key="idx" alt=""> -->
+                        </transition-group>
+                    </div>
+                    <div class="search_group">
+                        <div class="sel_menu">
+                            <ul>
+                                <li v-for="menu in selected" @click="select_item" >{{menu.type}}</li>
+                            </ul>
+                        </div>
+                        <input type="text" name="search-bar" placeholder="搜尋..." name="search" id="search">
+                        <!-- <i class="fas fa-search"></i> -->
+                    </div>
+                </div>
+
+                
+                <div v-show="css.black_block.display" class="block" @click="close_other">
+                    
+                </div>
+
+                <div  v-show="css.signin.display" class="signin">
+                    <div class="t_group">
+                        <div class="wrap">
+                            <img class="icon" src='./icon.jpg'  alt="">
+                            <p class="title">登入TRAPPY</p>
+                        </div>
+                        <img src="./img/btn/email_lg.png" @click="mail_login">
+                        <img src="./img/btn/fb_lg.png" alt="">
+                        <img src="./img/btn/google_lg.png" alt="">
+                        <img src="./img/btn/signup.png"@click="signup">
+                        
+                    
+                    </div>
+                </div>
+            </main>
+
 
                 <!-- <img class="banner" src='https://picsum.photos/960/500' alt=""> -->
-            <div class="search">
-                <div class="sel_menu">
-                    <ul>
-                        <li v-for="menu in selected" @click="select_item" >{{menu.type}}</li>
-                    </ul>
-                </div>
-                <input type="text" name="search-bar" placeholder="搜尋..." name="search" id="search">
-                <i class="fas fa-search"></i>
 
-            </div>
-            
             <div v-show="css.black_block.display" class="block" @click="close_other">
                 
             </div>
@@ -141,5 +164,6 @@
         </div>
     </div>
     </body>
-    <script src="./js/index.js"></script>
+    <script type="module" src="./js/index.js"></script>
+    <!-- <script src="./js/router.js"></script> -->
 </html>
