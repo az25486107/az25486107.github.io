@@ -36,6 +36,7 @@ let routes = [
 			footer:footer
 		},
 		meta: {
+			requiresAuth: true ,
 			stylesheet: 'style2'
 		},
 	},
@@ -110,4 +111,7 @@ router.beforeEach((to, from, next) => {
 	
 	return next();
 });
+
+
+
 export {router}

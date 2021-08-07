@@ -1,4 +1,62 @@
 
+function check_provider(user){
+    if(user.providerData[0].providerId.indexOf("google")!=-1)
+        return "Google"
+    else if(user.providerData[0].providerId.indexOf("google")!=-1)
+        return "Facebook"
+    else
+        return "E-mail"
+}
+
+function initialUserData(user){
+    db.collection("user").doc(user.uid).set({
+        displayname:user.email[0].toUpperCase()+user.email[1],
+        provider: check_provider(user)//判斷提供者
+    })
+}
+
+
+// Vue.component('signinByGoogle', {
+//     data: function () {
+//     return {
+//         count: 0
+//         }
+//     },
+//     template: '<button v-on:click="count++">You clicked me {{ count }} times.</button>'
+// })
+
+Vue.component('signinByFacebook', {
+    template: '<img @click=signInFacebook src="./img/icon/Facebook.png" alt="">',
+    methods:{
+        async signInFacebook(){//Facebook登入
+            const provider = new firebase.auth.FacebookAuthProvider();
+            let user=await firebase.auth().signInWithPopup(provider).then((res)=>{return res.user})//連結成功,獲取會員資料
+            let res=await db.collection("user").doc(user.uid).get()
+            if (!res.exists){
+                initialUserData(user)
+            }
+            alert('登入成功');
+            this.$router.push('/')
+        },
+    }
+})
+Vue.component('signinByGoogle', {
+    template: '<img @click=signInGoogle src="./img/icon/Google.png" alt="">',
+    methods:{
+        async signInGoogle(){//google登入
+            const provider = new firebase.auth.GoogleAuthProvider();
+            let user=await firebase.auth().signInWithPopup(provider).then((res)=>{return res.user})//連結成功,獲取會員資料
+            let res=await db.collection("user").doc(user.uid).get()
+            if (!res.exists){
+                initialUserData(user)
+            }
+            alert('登入成功');
+            this.$router.push('/')
+        },
+    }
+})
+
+
 let error_msg={
     "acc":"",
     "pwd":""
@@ -60,8 +118,8 @@ let signin = {
                             <div class="description">
                                 Or login with
                             </div>
-                            <img src="./img/icon/fb.png" alt="">
-                            <img src="./img/icon/google.png" alt="">
+                            <img src="./img/icon/Facebook.png" alt="">
+                            <img @click=signInGoogle src="./img/icon/Google.png" alt="">
                             
                         </div>
                     </div>
@@ -74,9 +132,27 @@ let signin = {
         </div>
     </div>
     `,
-    // <a href="">Dont have an <span class="tag">account</span>?　/　</a>
-    // <a href="">Forget <span class="tag">Password?</span></a>
     methods:{
+        async signInFacebook(){
+            const provider = new firebase.auth.FacebookAuthProvider();
+            let user=await  firebase.auth().signInWithPopup(provider).then((res) =>{return res.user})
+            let res=await db.collection("user").doc(user.uid).get()
+            if (!res.exists){
+                initialUserData(user)
+            }
+            alert('登入成功');
+            this.$router.push('/')
+        },
+        async signInGoogle(){//google登入
+            const provider = new firebase.auth.GoogleAuthProvider();
+            let user=await firebase.auth().signInWithPopup(provider).then((res)=>{return res.user})//連結成功,獲取會員資料
+            let res=await db.collection("user").doc(user.uid).get()
+            if (!res.exists){
+                initialUserData(user)
+            }
+            alert('登入成功');
+            this.$router.push('/')
+        },
         signin(){
             firebase.auth().signInWithEmailAndPassword(user_data["account"], user_data["pwd"])
             .then((userdata) => {
@@ -94,7 +170,7 @@ let signin = {
         signout(){
             firebase.auth().signOut().then(function() {
                 alert('您被逐出紫禁城了');
-              })
+            })
         }
     },
 
@@ -157,9 +233,8 @@ let signup={
                             <div class="description">
                                 Create with
                             </div>
-                            <img src="./img/icon/fb.png" alt="">
-                            <img src="./img/icon/google.png" alt="">
-                            
+                                <signinByFacebook></signinByFacebook>
+                                <signinByGoogle></signinByGoogle>
                         </div>
                         <button class="login_btn" @click=signup>
                             Create
@@ -169,17 +244,61 @@ let signup={
             </div>
         </div>
         <div class="footer">
-            <router-link to="/signin" class="nosignup">You have an <span class="tag">account<span></router-link> 
+            <router-link to="/signin" class="nosignup">You have an <span class="tag">account</span></router-link> 
         </div>
     </div>
     `,
+    // <img @click=signInGoogle src="./img/icon/Google.png" alt="">
     // <a href="">You have an <span class="tag">account</span>?</a>
     methods:{
+        signInGoogle(){
+            const provider = new firebase.auth.GoogleAuthProvider();
+            firebase.auth()
+            .signInWithPopup(provider)
+            .then((res) => {
+                let user=res.user
+                if(user.providerData[0].providerId.indexOf("google")){
+                    user.provider="Google"
+                }else if(user.providerData[0].providerId.indexOf("google")){
+                    user.provider="Facebook"
+                }
+                else{
+                    user.provider="E-mail"
+                }
+                db.collection("user").doc(user.uid).set({
+                    displayname:user.email[0].toUpperCase()+user.email[1],
+                    provider:user.provider
+                    //預防兩次加密URI,如果有更新才傳送新的,否則傳送舊的已加密
+                },{ merge:true}).then(()=>{
+                    this.$router.push('/')
+                })
+            }).catch((error) => {
+                console.log(error)
+                var errorCode = error.code;
+                var errorMessage = error.message;
+                var email = error.email;
+                var credential = error.credential;
+            });
+        },
         signup(){
             firebase.auth().createUserWithEmailAndPassword(user_data["account"], user_data["pwd"])
-                .then((userdata) => {
-                    if(userdata){
-                        this.$router.push('/signin');
+                .then((user) => {
+                    if(user){
+                        if(user.providerData[0].providerId.indexOf("google")){
+                            user.provider="Google"
+                        }else if(user.providerData[0].providerId.indexOf("google")){
+                            user.provider="Facebook"
+                        }
+                        else{
+                            user.provider="E-mail"
+                        }
+                        db.collection("user").doc(user.uid).set({
+                            displayname:user.email[0].toUpperCase()+user.email[1],
+                            provider:user.provider
+                            //預防兩次加密URI,如果有更新才傳送新的,否則傳送舊的已加密
+                        }).then(()=>{
+                            this.$router.push('/')
+                        })
                     }
                 })
                 .catch((error) => {

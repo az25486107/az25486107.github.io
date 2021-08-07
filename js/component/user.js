@@ -2,7 +2,16 @@
 // // You need a specific loader for CSS files
 // // import 'vue-datetime/dist/vue-datetime.css'
 // // Vue.use(Datetime)
+function getlengthb(str){
+    return str.replace(/[^\x00-\xff]/g,"**").length
+}
 
+function checkcht(str){
+    let rex = /[^\x00-\xff]/g
+    if (rex.test(str))//如有中文,只回傳第一個字
+        return str[0]
+    return str//無中文全回傳
+}
 let data_user={
     birth:"",
     location:"",
@@ -13,7 +22,8 @@ let data_user={
     sex:"",
     displayname:"",
     ralationship:"",
-    photourl:""
+    photourl:"",
+    provider:""
 }
 
 let firebase_host="https://firebasestorage.googleapis.com/v0/b/trappy-b8aa6.appspot.com/o/"
@@ -41,8 +51,8 @@ let user={
                             </div>
                         </div> 
                         <div class="login_mode">
-                            <img src="./img/icon/fb_sq.svg" alt="">
-                            <p class="tname">Facebook</p>
+                            <img :src=provider_icon alt="">
+                            <p class="tname">{{"使用 "+user.provider+" 登入"}}</p>
                             <!-- <div class="checkmark"></div> -->
                             <img class="checkmark" src="./img/icon/checkmark.svg" alt="">
                         </div>
@@ -135,6 +145,7 @@ let user={
         let c=await db.collection("user").doc(tmp_user.uid).get().then((res)=>{
             if(res.data()){
                 this.user.uid=tmp_user.uid
+                this.user.provider=res.data().provider
                 this.user.birth=""||res.data().birth
                 this.user.location=""||res.data().location
                 this.user.hoppy=""||res.data().hoppy
@@ -155,18 +166,21 @@ let user={
         })
     },
     computed:{
+        provider_icon(){
+            return "../img/icon/"+this.user.provider+".png"
+        },
         photourl(){
             return firebase_host+this.user.photourl+"?alt=media"
         },
         pic_word(){
-            if( this.user.displayname.length>=2){
-                return this.user.displayname[0].toUpperCase()+this.user.displayname[1]
+            if( getlengthb(this.user.displayname)>=2){
+                return checkcht(this.user.displayname[0].toUpperCase()+this.user.displayname[1])
             }else{
                 return "RE"
             }
         },
         inputlen(){//依照暱稱大小*16長度,變更input長度
-            let len=this.user.displayname.length
+            let len=getlengthb(this.user.displayname)<=2 ? 2:getlengthb(this.user.displayname)
             return len*16
         }
     },
@@ -203,7 +217,7 @@ let user={
 
             user = firebase.auth().currentUser
             if (user) {
-                db.collection("user").doc(user.uid).set({
+                db.collection("user").doc(user.uid).update({
                     hoppy:this.user.hoppy,
                     birth:this.user.birth,
                     sex:this.user.sex,
