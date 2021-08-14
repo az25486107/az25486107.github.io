@@ -59,10 +59,11 @@ let user={
                     </div>
                     <div class="setting">
                         <ul>
-                            <li>帳號設定</li>
-                            <li>通知設定</li>
-                            <li>我的收藏</li>
-                            <li>旅遊紀錄</li>
+                            <li><span class="lnr lnr-users"></span>帳號設定</li>
+                            <li><span class="lnr lnr-clock"></span>通知設定</li>
+                            <li><span class="lnr lnr-tag"></span>我的收藏</li>
+                            <li><span class="lnr lnr-heart"></span>愛心瀏覽</li>
+                            <li @click=signout><span class="lnr lnr-exit"></span>帳號登出</li>
                         </ul>
                     </div>
                 </div>
@@ -141,25 +142,20 @@ let user={
         </div>    
     `,
     async created(){
-        let tmp_user=firebase.auth().currentUser
-        let c=await db.collection("user").doc(tmp_user.uid).get().then((res)=>{
+		this.user.uid=localStorage.getItem("uid")
+        await db.collection("user").doc(this.user.uid).get().then((res)=>{
             if(res.data()){
-                this.user.uid=tmp_user.uid
-                this.user.provider=res.data().provider
-                this.user.birth=""||res.data().birth
-                this.user.location=""||res.data().location
-                this.user.hoppy=""||res.data().hoppy
-                this.user.sign=""||res.data().sign
-                this.user.line=""||res.data().line
-                this.user.job=""||res.data().job
-                this.user.sex=""||res.data().sex
-                this.user.photourl=""||res.data().photourl
-                this.user.relationship=""||res.data().relationship
-                this.user.email=tmp_user.email
-                this.user.displayname=res.data().displayname?res.data().displayname:tmp_user.email[0].toUpperCase()+tmp_user.email[1]
-                //預設假如沒有設定暱稱,取email第一個字母大寫+第二字母小寫
-            }else{
-                this.user.displayname="te"||tmp_user.email[0].toUpperCase()+tmp_user.email[1]
+				// this.user.state=true
+                // this.user.birth=""||res.data().birth
+                // this.user.location=""||res.data().location
+                // this.user.hoppy=""||res.data().hoppy
+                // this.user.sign=""||res.data().sign
+                // this.user.line=""||res.data().line
+                // this.user.job=""||res.data().job
+                // this.user.sex=""||res.data().sex
+                // this.user.photourl=""||res.data().photourl
+                // this.user.provider=""||res.data().provider
+                this.user=res.data()
             }
         }).catch((error) => {
             console.log("Error getting document:", error)
@@ -185,6 +181,17 @@ let user={
         }
     },
     methods: {
+        signout(){
+            firebase.auth().signOut().then(() => {
+                alert("登出成功")
+                localStorage.clear("uid")
+                this.$router.push({ path: '/' })
+                location.reload()//直接重新刷新..爛招 但想不到辦法了QQ
+
+            }).catch((error) => {
+            // An error happened.
+            })
+        },
         previewImage: function(event) {
         
             let input = event.target

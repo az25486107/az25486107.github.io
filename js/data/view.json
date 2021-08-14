@@ -1,0 +1,1757 @@
+{
+  "total": 20,
+  "data": [
+    {
+      "id": 1734,
+      "name": "彩虹河濱公園",
+      "introduction": "彩虹河濱公園位於基隆河中山高速公路至麥帥一橋之間，彩虹橋橫跨於成美左、右岸河濱公園，紅色悠美的S型橋體是許多攝影者愛好的拍攝地點。\r\n\r\n在彩虹橋下的河濱廣場有情人們設計一系列的愛情主題造景，包括標示12種「我愛你」語文的情人步道、情人座椅、LOVE立體文字雕塑、愛情鎖等，歡迎情人們前來感受水岸浪漫氛圍。",
+      "open_time": "",
+      "zipcode": "114",
+      "distric": "內湖區",
+      "address": "114 臺北市內湖區堤頂大道一段",
+      "tel": "",
+      "fax": "",
+      "email": "",
+      "nlat": 25.05996,
+      "elong": 121.57231,
+      "official_site": "https://heo.gov.taipei/News_Content.aspx?n=E65DBD99C91AEAC4&sms=3A0FD6D3764BFBA7&s=760F3D330117800D",
+      "facebook": "",
+      "modified": "2021-05-10 12:22:46 +08:00",
+      "url": "https://www.travel.taipei/zh-tw/attraction/details/1734",
+      "service": [
+        {
+          "id": 146,
+          "name": "公廁"
+        },
+        {
+          "id": 147,
+          "name": "停車場"
+        }
+      ],
+      "friendly": [],
+      "images": [
+        {
+          "src": "https://www.travel.taipei/image/89016",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/89017",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/89018",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/89019",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/89020",
+          "subject": "",
+          "ext": ".jpg"
+        }
+      ],
+    },
+    {
+      "id": 1531,
+      "name": "關渡水岸公園",
+      "name_zh": null,
+      "open_status": 1,
+      "introduction": "關渡地名來自於西班牙語的「Casidor」，只因日本人發音省去「S」所以變成今日的「關渡」。關渡在古老的時代中曾經是硫磺產地和出口中心，1895年時曾為軍事要塞，設有砲台，也曾遭受過隕石的攻擊，至今仍遺留疑似殞石的殘骸在關渡國小自強分校內。\r\n\r\n關渡水岸公園佔地遼闊，有人行步道、自行車道外，關渡碼頭也是「藍色公路」的乘船地點之一，分別駛向臺北大稻埕碼頭、淡水老街、八里左岸及漁人碼頭四條路線；從關渡河濱的自行車道，亦可北上淡水漁人碼頭，南下基隆河至社子島，串聯成一路美麗的風景。\r\n\r\n在這裡，有豐富的潮間帶生態可供觀察研究，午後、黃昏、夜晚，也各有許多不同的樣貌與景緻，尤其是淡水河的沿岸風光，和八里觀音山的黃昏美景，以及入夜後碼頭上炫目的景觀燈。",
+      "open_time": "",
+      "zipcode": "112",
+      "distric": "北投區",
+      "address": "112 臺北市北投區知行路360號",
+      "tel": "",
+      "fax": "",
+      "email": "",
+      "months": "07,08,09,10,05,06",
+      "nlat": 25.11735,
+      "elong": 121.46322,
+      "official_site": "",
+      "facebook": "",
+      "ticket": "",
+      "remind": "",
+      "staytime": "",
+      "modified": "2021-05-06 19:17:12 +08:00",
+      "url": "https://www.travel.taipei/zh-tw/attraction/details/1531",
+      "category": [
+        {
+          "id": 12,
+          "name": "單車遊蹤"
+        },
+        {
+          "id": 16,
+          "name": "戶外踏青"
+        },
+        {
+          "id": 17,
+          "name": "藍色水路"
+        },
+        {
+          "id": 19,
+          "name": "親子共遊"
+        }
+      ],
+      "target": [],
+      "service": [
+        {
+          "id": 146,
+          "name": "公廁"
+        }
+      ],
+      "friendly": [],
+      "images": [
+        {
+          "src": "https://www.travel.taipei/image/91783",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/91784",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/91785",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/91786",
+          "subject": "",
+          "ext": ".jpg"
+        }
+      ],
+      "files": [],
+      "links": []
+    },
+    {
+      "id": 390,
+      "name": "古亭河濱公園",
+      "name_zh": null,
+      "open_status": 1,
+      "introduction": "古亭河濱公園位於永福橋至中正橋間，單車從思源街沿著自來水博物館方向騎到底就可進入園區內，斜坡道種植灌木排列出「古亭河濱公園」字樣別具巧思。夏日午 后，避開烈日，來這裡吹吹風，公園內有網球場、籃球場、溜冰場等一應具全的運動設施供市民使用。\r\n\r\n古亭河濱公園綠地廣闊，橋下有涼風習習。喜愛來此地打球的 球友都知道，這裡有兩座網球場比鄰而建，共享綠蔭庇蔭，運動時不必在烈日下曝曬，最適合用來比賽。\r\n\r\n永福橋下有攀岩練習場和兒童遊樂設施，滑梯下鋪著厚厚的保護軟墊，可見市府的貼心設計。攀岩壁面高約三米，看精力充沛的孩子們攀爬似乎不難，自己實地操作 卻有些難度，夏日帶著孩子們到這裡避暑、遊戲是很不錯的選擇。除了夏季，冬季時這裡還有整片的波斯菊花海綻放，讓人忍不住想停下腳步欣賞。這裡的自行車道 燈光、規劃都相當完善，尤其是夏日夜晚，更是許多人選擇夜騎的好地點。",
+      "open_time": "",
+      "zipcode": "100",
+      "distric": "中正區",
+      "address": "100 臺北市中正區永福橋至中正橋間",
+      "tel": "",
+      "fax": "",
+      "email": "",
+      "months": "01,07,02,08,03,09,04,10,05,11,06,12",
+      "nlat": 25.02015,
+      "elong": 121.52256,
+      "official_site": "https://heo.gov.taipei/News_Content.aspx?n=E65DBD99C91AEAC4&sms=3A0FD6D3764BFBA7&s=32A53CBA0EEBE107",
+      "facebook": "",
+      "ticket": "",
+      "remind": "",
+      "staytime": "",
+      "modified": "2021-05-06 16:01:15 +08:00",
+      "url": "https://www.travel.taipei/zh-tw/attraction/details/390",
+      "category": [
+        {
+          "id": 12,
+          "name": "單車遊蹤"
+        },
+        {
+          "id": 16,
+          "name": "戶外踏青"
+        },
+        {
+          "id": 19,
+          "name": "親子共遊"
+        }
+      ],
+      "target": [],
+      "service": [
+        {
+          "id": 146,
+          "name": "公廁"
+        }
+      ],
+      "friendly": [],
+      "images": [
+        {
+          "src": "https://www.travel.taipei/image/65862",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/174883",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/174884",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/65852",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/65856",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/65857",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/65858",
+          "subject": "",
+          "ext": ".jpg"
+        }
+      ],
+      "files": [],
+      "links": []
+    },
+    {
+      "id": 2179,
+      "name": "公館水岸廣場",
+      "name_zh": null,
+      "open_status": 1,
+      "introduction": "一個臨新店溪的公共空間，臺北市百年前水源發源地，也是臺北市唯一一段沒有堤防的景觀空間，平日提供民眾休憩及欣賞河濱景緻，這裡有腳踏車租借站，讓遊客到河濱車道享受騎乘單車悠遊河岸的樂趣，假日夜間搖身成為河岸Pub，成為年輕族群夜間最佳談天場所。\r\n\r\n(資料來源:臺北自來水園區)",
+      "open_time": "",
+      "zipcode": "100",
+      "distric": "中正區",
+      "address": "100 臺北市中正區思源街1號",
+      "tel": "",
+      "fax": "",
+      "email": "",
+      "months": "01,07,02,08,03,09,04,10,05,11,06,12",
+      "nlat": 25.01125,
+      "elong": 121.5284,
+      "official_site": "https://waterpark.water.gov.taipei/cp.aspx?n=458F994D4BBBC779",
+      "facebook": "",
+      "ticket": "",
+      "remind": "",
+      "staytime": "",
+      "modified": "2021-05-06 11:53:32 +08:00",
+      "url": "https://www.travel.taipei/zh-tw/attraction/details/2179",
+      "category": [
+        {
+          "id": 12,
+          "name": "單車遊蹤"
+        },
+        {
+          "id": 19,
+          "name": "親子共遊"
+        }
+      ],
+      "target": [
+        {
+          "id": 63,
+          "name": "單車族"
+        }
+      ],
+      "service": [],
+      "friendly": [],
+      "images": [
+        {
+          "src": "https://www.travel.taipei/image/180611",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/180612",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/180613",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/180614",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/180846",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/180847",
+          "subject": "",
+          "ext": ".jpg"
+        }
+      ],
+      "files": [],
+      "links": []
+    },
+    {
+      "id": 270,
+      "name": "基隆河左右岸親水自行車道",
+      "name_zh": null,
+      "open_status": 1,
+      "introduction": "從左岸的林安泰疏散門進入河濱自行車道，遊客可以看見記錄著基隆河緣起、整治故事的解說牌，讓民眾在運動休閒之餘，還能了解基隆河長長的歷史故事。\r\n\r\n大佳河濱公園是屬河床填土後的新生地，放眼望去盡是綠野草皮，靠西之地建設成都會型綠化公園，其中以中山橋到大直橋間段的親水公園最具特色，地標「希望之泉」的噴泉設計，高達25層樓高的扇形噴泉水幕，精采的水舞、夜晚亮麗的五彩霓虹燈光，整個河濱之地瞬間成為繽紛亮麗，背景在圓山飯店古典輝煌的紅色建築陪襯下，景致格外好看、令人難忘，可以說是市區閤家老少、戀愛男女朋友約會的最佳去處。\r\n\r\n遊客若是從右岸的美堤疏散門進入，也同樣可以看見堤防壁上用圖案細說基隆河的歷史故事，同樣精彩耀眼，夜遊基隆河，更可看到眩麗的摩天輪及內湖科技園區夜景。",
+      "open_time": "全天開放",
+      "zipcode": "104",
+      "distric": "中山區",
+      "address": "104 臺北市中山區林安泰疏散門",
+      "tel": "",
+      "fax": "",
+      "email": "",
+      "months": "07,02,08,03,09,04,10,05,11,06",
+      "nlat": 25.07301,
+      "elong": 121.52956,
+      "official_site": "https://heo.gov.taipei/cp.aspx?n=E8DE4F6D074A4ADD",
+      "facebook": "",
+      "ticket": "",
+      "remind": "",
+      "staytime": "",
+      "modified": "2021-05-03 18:18:11 +08:00",
+      "url": "https://www.travel.taipei/zh-tw/attraction/details/270",
+      "category": [
+        {
+          "id": 12,
+          "name": "單車遊蹤"
+        },
+        {
+          "id": 16,
+          "name": "戶外踏青"
+        },
+        {
+          "id": 19,
+          "name": "親子共遊"
+        }
+      ],
+      "target": [
+        {
+          "id": 63,
+          "name": "單車族"
+        }
+      ],
+      "service": [
+        {
+          "id": 146,
+          "name": "公廁"
+        }
+      ],
+      "friendly": [],
+      "images": [
+        {
+          "src": "https://www.travel.taipei/image/65476",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/65475",
+          "subject": "",
+          "ext": ".jpg"
+        }
+      ],
+      "files": [],
+      "links": []
+    },
+    {
+      "id": 263,
+      "name": "延平河濱公園",
+      "name_zh": null,
+      "open_status": 1,
+      "introduction": "臺北市延平河濱公園位於忠孝橋至延平北路9段中洲抽水站之間堤外高灘地，這一帶在民國40年代曾是臺北人的休憩用地。延平河濱公園靠近忠孝橋至民生西路底，有大片腹地，自南京西路底(四號)進入，即看見大片濃郁樹林，綠草地和成蔭的大樹，這裡自古即是大同區居民的後花園，清晨廣場上不時有跳土風舞的婆婆媽媽，和散步、打太極拳的老爺爺。\r\n\r\n進入南京西路底(四號)水門有座「延平宮」到現在仍是當地耆老們的聚會之地，牌匾上刻有乙己年臘月，估計約在1905年所建，廟埕大供桌下，虎爺的造形古樸靈動，似乎見證了當地的興衰演變。民生西路底(五號) 水門外即是大稻埕碼頭，一進水門，即可看到色彩鮮豔的唐山帆船、線條優雅的拱橋、並設有藍色公路乘船碼頭，目前有可以帶大家走水路到關渡或是八里，感受與陸路不一樣的風情。\r\n\r\n大稻埕碼頭(五號水門)設置了藍色公路乘船碼頭、咖啡廣場、唐山帆船，乘著自行車沿河北行，一路伴隨著陽明山景、淡水河夕照；對比著數座跨河大橋上的車陣川流，眼下的悠閒顯得格外難得。騎士們還可沿路走訪相鄰文化古蹟，包括大稻埕、迪化街、霞海城隍廟、臺北孔廟、大龍峒保安宮、永樂市場等景點，大稻埕昔日的繁華，也就能略窺一二。",
+      "open_time": "全天開放",
+      "zipcode": "103",
+      "distric": "大同區",
+      "address": "103 臺北市大同區堤外道路",
+      "tel": "+886-2-27258186",
+      "fax": "",
+      "email": "",
+      "months": "01,07,02,08,03,09,04,10,05,11,06,12",
+      "nlat": 25.05412,
+      "elong": 121.50707,
+      "official_site": "https://heo.gov.taipei/News_Content.aspx?n=E65DBD99C91AEAC4&sms=3A0FD6D3764BFBA7&s=092AD6C9EF3ABCB0",
+      "facebook": "",
+      "ticket": "",
+      "remind": "",
+      "staytime": "",
+      "modified": "2021-05-03 17:52:07 +08:00",
+      "url": "https://www.travel.taipei/zh-tw/attraction/details/263",
+      "category": [
+        {
+          "id": 12,
+          "name": "單車遊蹤"
+        },
+        {
+          "id": 16,
+          "name": "戶外踏青"
+        },
+        {
+          "id": 17,
+          "name": "藍色水路"
+        },
+        {
+          "id": 19,
+          "name": "親子共遊"
+        }
+      ],
+      "target": [
+        {
+          "id": 61,
+          "name": "親子共學"
+        },
+        {
+          "id": 62,
+          "name": "校外教學"
+        },
+        {
+          "id": 63,
+          "name": "單車族"
+        }
+      ],
+      "service": [
+        {
+          "id": 146,
+          "name": "公廁"
+        }
+      ],
+      "friendly": [],
+      "images": [
+        {
+          "src": "https://www.travel.taipei/image/65373",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/65375",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/65372",
+          "subject": "",
+          "ext": ".jpg"
+        }
+      ],
+      "files": [],
+      "links": []
+    },
+    {
+      "id": 252,
+      "name": "迎風河濱公園",
+      "name_zh": null,
+      "open_status": 1,
+      "introduction": "位於基隆河大直橋至中山高速公路間，面積約273,387平方公尺。 園區最大的特色就是設有專為狗兒們所設置的「迎風狗運動公園」，佔地約1公頃，以體重9公斤作為分野，分為大狗區和小狗區，並設置不鏽鋼圍欄、雙層門作為人犬防護措施，還有狗便清潔便利設施，以及8座休憩座椅和4座洗手足台，方便在一番玩鬧之後，讓主人洗手和狗狗洗腳之用。\r\n\r\n河岸的親水草坪，是闔家歡聚、嬉戲、休憩的好地方，運動場是迎風河濱公園另一特色，有多項設施可供民眾一展身手，鍛鍊強健體魄，包括有羽球、棒壘球、足球、直排輪練習場等運動設施，另外，還有一座超迷你高爾夫球練習場喔！",
+      "open_time": "全天開放",
+      "zipcode": "104",
+      "distric": "中山區",
+      "address": "104 臺北市中山區濱江街7號水門",
+      "tel": "",
+      "fax": "",
+      "email": "",
+      "months": "01,07,02,08,03,09,04,10,05,11,06,12",
+      "nlat": 25.07435,
+      "elong": 121.54574,
+      "official_site": "https://heo.gov.taipei/News_Content.aspx?n=E65DBD99C91AEAC4&sms=3A0FD6D3764BFBA7&s=2A2A587DBB172175",
+      "facebook": "",
+      "ticket": "",
+      "remind": "",
+      "staytime": "",
+      "modified": "2021-05-03 15:12:53 +08:00",
+      "url": "https://www.travel.taipei/zh-tw/attraction/details/252",
+      "category": [
+        {
+          "id": 12,
+          "name": "單車遊蹤"
+        },
+        {
+          "id": 16,
+          "name": "戶外踏青"
+        },
+        {
+          "id": 17,
+          "name": "藍色水路"
+        },
+        {
+          "id": 19,
+          "name": "親子共遊"
+        }
+      ],
+      "target": [
+        {
+          "id": 61,
+          "name": "親子共學"
+        },
+        {
+          "id": 62,
+          "name": "校外教學"
+        },
+        {
+          "id": 63,
+          "name": "單車族"
+        }
+      ],
+      "service": [
+        {
+          "id": 144,
+          "name": "餐飲"
+        },
+        {
+          "id": 147,
+          "name": "停車場"
+        }
+      ],
+      "friendly": [],
+      "images": [
+        {
+          "src": "https://www.travel.taipei/image/65131",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/65135",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/65141",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/65155",
+          "subject": "",
+          "ext": ".jpg"
+        }
+      ],
+      "files": [],
+      "links": []
+    },
+    {
+      "id": 251,
+      "name": "大佳河濱公園",
+      "name_zh": null,
+      "open_status": 1,
+      "introduction": "大佳河濱公園位於中山區中山橋和大直橋之間，是基隆河截彎取直後，經市政府開發建設而成的都會型綠化公園。面積廣大，進入園區映入眼簾的就是一大片一望無際的廣闊草園，還可以遙望美麗華的摩天輪，景色優美。\r\n\r\n園內有一座大型噴水水景，中央水柱最高高達75公尺，利用水景高低強弱的視覺變化，展現其律動的特色。其中還有運動公園，有籃、網、羽、槌球場等運動設施，以及環繞園區數公里長的自行車道(園內提供自行車出租)。大佳河濱公園由於場地寬闊、停車方便、環境優美，例假日除了有許多民眾在此嬉戲運動之外，也不定期舉辦各項大型活動，展現臺北市都會活力朝氣的一面。",
+      "open_time": "開放空間",
+      "zipcode": "104",
+      "distric": "中山區",
+      "address": "104 臺北市中山區基隆河中山橋和大直橋之間",
+      "tel": "",
+      "fax": "",
+      "email": "",
+      "months": "01,07,02,08,03,09,04,10,05,11,06,12",
+      "nlat": 25.07464,
+      "elong": 121.54089,
+      "official_site": "",
+      "facebook": "",
+      "ticket": "",
+      "remind": "",
+      "staytime": "",
+      "modified": "2021-05-03 15:10:48 +08:00",
+      "url": "https://www.travel.taipei/zh-tw/attraction/details/251",
+      "category": [
+        {
+          "id": 12,
+          "name": "單車遊蹤"
+        },
+        {
+          "id": 16,
+          "name": "戶外踏青"
+        },
+        {
+          "id": 19,
+          "name": "親子共遊"
+        }
+      ],
+      "target": [
+        {
+          "id": 61,
+          "name": "親子共學"
+        },
+        {
+          "id": 62,
+          "name": "校外教學"
+        },
+        {
+          "id": 63,
+          "name": "單車族"
+        }
+      ],
+      "service": [
+        {
+          "id": 144,
+          "name": "餐飲"
+        },
+        {
+          "id": 146,
+          "name": "公廁"
+        }
+      ],
+      "friendly": [],
+      "images": [
+        {
+          "src": "https://www.travel.taipei/image/182961",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/182962",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/182963",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/182964",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/182965",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/182966",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/182967",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/182968",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/182969",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/182970",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/182971",
+          "subject": "",
+          "ext": ".jpg"
+        }
+      ],
+      "files": [],
+      "links": []
+    },
+    {
+      "id": 243,
+      "name": "彩虹橋",
+      "name_zh": null,
+      "open_status": 1,
+      "introduction": "彩虹橋全長167公尺，是連接內湖區新明路及松山區饒河街，橫跨基隆河的一座橋樑，造型特殊，由橋中央的四條主要鋼纜吊索支撐，橋的結構為S型的曲線橋體，鮮紅色鋼肋拱型梁結構，附屬設施為木質欄杆、粉紅及淡藍色地磚，為一座新穎的地標性公共設施。\r\n\r\n彩虹橋現只開放人及腳踏車通行，不開放汽機車通行，不時可見行人悠閒漫步，也是往返內湖及松山饒河夜市、松山火車站的捷徑橋梁，大大縮短了松山及內湖區居民互通的時間。入夜後，彩虹橋上燈影投射，為台北的夜景增添不少美麗，成為不少攝影愛好者捕捉台北夜景的好題材。另外彩虹橋亦設置藍色公路終點站碼頭，吸引更多遊河觀光人潮，成為台北市另一個觀光新地標。",
+      "open_time": "開放空間",
+      "zipcode": "105",
+      "distric": "松山區",
+      "address": "105 臺北市松山區連結饒河街與內湖區新明路",
+      "tel": "",
+      "fax": "",
+      "email": "",
+      "months": "01,07,02,08,03,09,04,10,05,11,06,12",
+      "nlat": 25.05215,
+      "elong": 121.57665,
+      "official_site": "",
+      "facebook": "",
+      "ticket": "",
+      "remind": "",
+      "staytime": "",
+      "modified": "2021-04-30 17:14:34 +08:00",
+      "url": "https://www.travel.taipei/zh-tw/attraction/details/243",
+      "category": [
+        {
+          "id": 12,
+          "name": "單車遊蹤"
+        },
+        {
+          "id": 16,
+          "name": "戶外踏青"
+        },
+        {
+          "id": 17,
+          "name": "藍色水路"
+        },
+        {
+          "id": 19,
+          "name": "親子共遊"
+        }
+      ],
+      "target": [
+        {
+          "id": 61,
+          "name": "親子共學"
+        },
+        {
+          "id": 62,
+          "name": "校外教學"
+        },
+        {
+          "id": 63,
+          "name": "單車族"
+        },
+        {
+          "id": 66,
+          "name": "健行族"
+        }
+      ],
+      "service": [
+        {
+          "id": 146,
+          "name": "公廁"
+        }
+      ],
+      "friendly": [],
+      "images": [
+        {
+          "src": "https://www.travel.taipei/image/65047",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/65049",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/65050",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/65052",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/179285",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/179286",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/179287",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/179288",
+          "subject": "",
+          "ext": ".jpg"
+        }
+      ],
+      "files": [],
+      "links": []
+    },
+    {
+      "id": 226,
+      "name": "華中河濱公園",
+      "name_zh": null,
+      "open_status": 1,
+      "introduction": "從空中鳥瞰，新店溪在華中河濱公園這裡轉了個彎，形成大面積的氾濫平原，彎彎的地形，像極了一抹弦月，更像支迴力刀，滿眼寬闊平坦的綠草地，最適合舉辦大 型活動；這裡也是觀看夕陽、賞鳥的最佳場所：公園裡生態豐富，河裡有魚群迴流覓食，隨處可見野鳥在樹間跳躍。園內有多樣的兒童遊戲設施，還貼心的舖設細 砂，使安全無虞，設施週遭亦提供座椅，供父母可以在同時兼顧兒童活動安全下休憩，增加親子情感互動。98年起市府更在此設立了華中露營場，提供帳篷及汽車 營位供民眾申請使用，可說是全臺第一座大型的河濱露營場。\r\n\r\n當你騎乘自行車遨遊河濱公園經過華中橋下時，那裡設有園遊攤位當作自行車休憩的節點，園內攤位多樣性經營，有台灣風味小吃、童玩等，旁邊還有一座自行車練 習場，提供不同動作等級的騎乘練習，讓技術尚不熟練的小朋友或一般民眾有安全自在的練習場地，周邊設有相關解說牌，可以進一步瞭解自行車基本知識及適當的 騎乘方式。建議您應先行瀏覽解說牌說明及此處頁面所提供之騎乘基本須知相關資料，才能開心又安心的練習及騎乘自行車漫遊水岸。休息過後繼續往下游前進會經 過一段林蔭隧道，晨間有許多人們在這裡跳舞和作運動，處處充滿了活力。\r\n\r\n來此地遊玩，不一定要騎自行車。還有多種運動場，如籃球場，不只讓三五好友來場「鬥牛」，更有沙灘排球場讓您於都市中也可以在陽光、沙灘下盡情的揮灑汗 水；而不管是清晨或是夜晚時分漫步於堤頂步道，在綠蔭乘涼下或是微微星光中吹著巍巍徐風，望著眼下的青青草原，都有不同的風味。另華中一號門、二號門入口 處附有寬敞的停車場，可以調節市區停車問題。華中河濱公園附近連接馬場町紀念公園和青年公園，是情侶約會的絕佳選擇，青年公園附近也有很多的美食可供選擇。",
+      "open_time": "全天開放",
+      "zipcode": "108",
+      "distric": "萬華區",
+      "address": "108 臺北市萬華區萬大路底華中橋旁",
+      "tel": "",
+      "fax": "",
+      "email": "",
+      "months": "01,07,02,08,03,09,04,10,05,11,06,12",
+      "nlat": 25.0154,
+      "elong": 121.49476,
+      "official_site": "",
+      "facebook": "",
+      "ticket": "",
+      "remind": "",
+      "staytime": "",
+      "modified": "2021-04-30 15:34:45 +08:00",
+      "url": "https://www.travel.taipei/zh-tw/attraction/details/226",
+      "category": [
+        {
+          "id": 12,
+          "name": "單車遊蹤"
+        },
+        {
+          "id": 16,
+          "name": "戶外踏青"
+        },
+        {
+          "id": 19,
+          "name": "親子共遊"
+        }
+      ],
+      "target": [
+        {
+          "id": 61,
+          "name": "親子共學"
+        },
+        {
+          "id": 62,
+          "name": "校外教學"
+        },
+        {
+          "id": 63,
+          "name": "單車族"
+        }
+      ],
+      "service": [
+        {
+          "id": 146,
+          "name": "公廁"
+        }
+      ],
+      "friendly": [],
+      "images": [
+        {
+          "src": "https://www.travel.taipei/image/64732",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/64734",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/64735",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/64731",
+          "subject": "",
+          "ext": ".jpg"
+        }
+      ],
+      "files": [],
+      "links": []
+    },
+    {
+      "id": 116,
+      "name": "新店溪、大漢溪與淡水河自行車道",
+      "name_zh": null,
+      "open_status": 1,
+      "introduction": "這段由大稻埕碼頭沿著延平河濱公園所興建的自行車道，在遊騎之餘還可以走訪相鄰的文化古蹟，在動靜相宜的休閒活動中，既可強身還可陶醉於文化洗禮。周邊著名的文化觀光景點，如迪化街、霞海城隍廟、林柳新紀念偶戲博物館、酒泉街方向的臺北孔廟、保安宮等景點，從中體驗文化饗宴。\r\n\r\n沿途景觀包括大稻埕碼頭咖啡廣場、唐山帆船造景、碼頭拱橋、淡水河遠眺等，還結合藍色公路航線，帶著腳踏車一起前進到關渡碼頭，甚至淡水漁人碼頭、八里左岸等，享受多樣之河濱遊憩樂趣。這段自行車道在華江橋之後便進入新店溪沿岸，橫跨新店溪的多座橋更可帶領您進入大漢溪沿岸的自行車道，因為周圍的建築物林立，更凸顯這片河畔公園的可貴，新店溪、大漢溪的沿岸景色，充滿「城市中的綠地」的感覺，這一長串的河濱公園，穿越了鶯歌、土城、板橋、中永和、新店，每年的10月到隔年3月，更可以欣賞遠道而來的雁鴨嬌客及保育候鳥，結合育樂、健身、美食等樂趣，讓整天的自行車騎乘活動充實而豐富。",
+      "open_time": "開放空間",
+      "zipcode": "108",
+      "distric": "萬華區",
+      "address": "108 臺北市萬華區華中二疏散門入口",
+      "tel": "",
+      "fax": "",
+      "email": "",
+      "months": "01,07,02,08,03,09,04,10,05,11,06,12",
+      "nlat": 25.01641,
+      "elong": 121.4953,
+      "official_site": "",
+      "facebook": "",
+      "ticket": "",
+      "remind": "1.長度：新店溪右岸8.5公里、新店溪左岸 + 大漢溪右岸約30公里、大漢溪左岸約16公里。\r\n2.騎乘時間：新店溪右岸約30分鐘、新店溪左岸 + 大漢溪右岸約120分鐘、大漢溪左岸約65分鐘。",
+      "staytime": "",
+      "modified": "2021-04-22 15:17:28 +08:00",
+      "url": "https://www.travel.taipei/zh-tw/attraction/details/116",
+      "category": [
+        {
+          "id": 12,
+          "name": "單車遊蹤"
+        },
+        {
+          "id": 16,
+          "name": "戶外踏青"
+        },
+        {
+          "id": 19,
+          "name": "親子共遊"
+        }
+      ],
+      "target": [
+        {
+          "id": 61,
+          "name": "親子共學"
+        },
+        {
+          "id": 63,
+          "name": "單車族"
+        }
+      ],
+      "service": [
+        {
+          "id": 146,
+          "name": "公廁"
+        }
+      ],
+      "friendly": [],
+      "images": [
+        {
+          "src": "https://www.travel.taipei/image/64305",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/64308",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/64309",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/64313",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/180737",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/180738",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/64294",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/64297",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/64300",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/64302",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/64304",
+          "subject": "",
+          "ext": ".jpg"
+        }
+      ],
+      "files": [],
+      "links": []
+    },
+    {
+      "id": 8,
+      "name": "雙溪生活水岸自行車道",
+      "name_zh": null,
+      "open_status": 1,
+      "introduction": "從陽明山國家公園發源的雙溪，流經東吳大學之後，轉往公路北側，河濱綠地公園也由此綿延展開，河濱自行車道順勢闢建於左右兩岸，成為臺北市河川單車路往中，最貼近住宅區也維護得極為完善的短小精緻路徑。\r\n\r\n景色優美的雙溪河畔，引領平日生活繁忙的都市人，找到一條解放疲憊身心的綠色隧道，由雙溪左岸在銜接百齡橋右岸自行車道，百齡橋右岸河濱公園是玩橄欖球愛好者聚集之處，也常見足球隊伍相互較勁，單車族群也可加入這片青青草原，一路踏騎到承德橋下，順路造訪臺北市最後舢舨碼頭「三腳渡」。",
+      "open_time": "開放空間",
+      "zipcode": "111",
+      "distric": "士林區",
+      "address": "111 臺北市士林區雙溪河濱公園",
+      "tel": "",
+      "fax": "",
+      "email": "",
+      "months": "01,07,02,08,03,09,04,10,05,11,06,12",
+      "nlat": 25.09992,
+      "elong": 121.52802,
+      "official_site": "",
+      "facebook": "",
+      "ticket": "",
+      "remind": "1.長度：左右岸各2.8公里 \r\n2.騎乘時間：約30分鐘",
+      "staytime": "",
+      "modified": "2021-04-13 14:33:20 +08:00",
+      "url": "https://www.travel.taipei/zh-tw/attraction/details/8",
+      "category": [
+        {
+          "id": 12,
+          "name": "單車遊蹤"
+        },
+        {
+          "id": 16,
+          "name": "戶外踏青"
+        },
+        {
+          "id": 19,
+          "name": "親子共遊"
+        }
+      ],
+      "target": [
+        {
+          "id": 61,
+          "name": "親子共學"
+        }
+      ],
+      "service": [
+        {
+          "id": 146,
+          "name": "公廁"
+        }
+      ],
+      "friendly": [],
+      "images": [
+        {
+          "src": "https://www.travel.taipei/image/63344",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/63345",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/63349",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/63350",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/63352",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/63354",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/63357",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/63359",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/63362",
+          "subject": "",
+          "ext": ".jpg"
+        }
+      ],
+      "files": [],
+      "links": []
+    },
+    {
+      "id": 6,
+      "name": "社子島環島與二重疏洪道自行車道",
+      "name_zh": null,
+      "open_status": 1,
+      "introduction": "社子島位於基隆河與淡水河之交匯處，地質為沙洲型態，該地區處處可見稻田橫亙，菜園綠茵，展現老農村民風純樸的美麗景緻。該地區利用堤頂建設自行車道，吸引許多自行車愛好者前往，社子島沙洲沙尾可以看見基隆和與淡水河交匯波濤澎湃的景象，每當夕陽西下，金黃色落日餘暉揮灑在河面上閃閃動人，遠眺大屯山及觀音山綿延天邊的景緻，教人美不勝收。\r\n\r\n往南還可銜接百齡橋左岸自行車，這裡有許多大型的各式球場，而且經常可以看見國內外著名的球隊在此練球，騎乘之餘欣賞開闊的運動廣場人群，既充實又熱鬧。二重疏洪道環狀自行車道全長24公里，穿越堤頂道路進入公園區域，不同主題的河濱綠地，可以花上很多時間去探險。",
+      "open_time": "開放空間",
+      "zipcode": "111",
+      "distric": "士林區",
+      "address": "111 臺北市士林區社子島自行車道",
+      "tel": "",
+      "fax": "",
+      "email": "",
+      "months": "07,08,03,09,04,10,05,06",
+      "nlat": 25.10985,
+      "elong": 121.46606,
+      "official_site": "",
+      "facebook": "",
+      "ticket": "",
+      "remind": "1.長度：社子島9公里，二重疏洪道24公里 \r\n2.騎乘時間：社子島約40分鐘、二重疏洪道約100分鐘\r\n\r\n路況屬於平坦路段、騎乘時舒適度普通，沿途可以看見基隆河與淡水河交匯波滔景像及遠眺大屯山、觀音山的景致，但因為路程較遠，較適合體力較好者。",
+      "staytime": "",
+      "modified": "2021-04-13 14:23:21 +08:00",
+      "url": "https://www.travel.taipei/zh-tw/attraction/details/6",
+      "category": [
+        {
+          "id": 12,
+          "name": "單車遊蹤"
+        },
+        {
+          "id": 19,
+          "name": "親子共遊"
+        }
+      ],
+      "target": [
+        {
+          "id": 61,
+          "name": "親子共學"
+        },
+        {
+          "id": 63,
+          "name": "單車族"
+        }
+      ],
+      "service": [
+        {
+          "id": 146,
+          "name": "公廁"
+        },
+        {
+          "id": 147,
+          "name": "停車場"
+        }
+      ],
+      "friendly": [],
+      "images": [
+        {
+          "src": "https://www.travel.taipei/image/63343",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/63341",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/63342",
+          "subject": "",
+          "ext": ".jpg"
+        }
+      ],
+      "files": [],
+      "links": []
+    },
+    {
+      "id": 5,
+      "name": "關渡_金色水岸_八里左岸自行車道",
+      "name_zh": null,
+      "open_status": 1,
+      "introduction": "基隆河匯入淡水河之前，繞著社子島轉出一個美麗的弧彎，在其北岸與磺港溪以西地帶，保留了都會臺北極其珍貴的稻香田園，連結起河口紅樹林自然保護區，讓人得以在很短的距離內隔絕塵囂嘈雜，單車踩踏其間，尤其能夠體會早年農村氛圍的樸素簡單、踏實自在。夕照裡堤道漫步，河風微微、鳥鳴吱吱，關渡自然保護區生機盎然中，獨有浪漫閒適的野趣滿點。\r\n\r\n穿越關渡平原的自行車道，是全線非封閉性的路徑，西側端點為關渡宮，往東沿著關渡防潮堤至八仙福德祠，轉90度往北穿越關渡平原，直到北投中央北路捷運軌道南側，穿出去便是政戰學校西邊的稻香路。 無法自行攜帶單車的遊人，以關渡宮為起點較方便，一則靠近捷運站，再者可於該處租到自行車或雙人協力車。 關渡宮沿河堤段原有的攤販已完全撤離，改成好走的人行步道，跨越中港河小橋旁停泊的漁船也外移至淡水河邊，雖然少了扁舟停泊的漁港懷舊味，水域卻也另有清爽的風貌。",
+      "open_time": "開放空間",
+      "zipcode": "112",
+      "distric": "北投區",
+      "address": "112 臺北市北投區關渡水岸腳踏車道",
+      "tel": "",
+      "fax": "",
+      "email": "",
+      "months": "01,07,02,08,03,09,04,10,05,11,06,12",
+      "nlat": 25.11382,
+      "elong": 121.48003,
+      "official_site": "",
+      "facebook": "",
+      "ticket": "",
+      "remind": "1.長度：11.9公里，其中貴子坑溪自行車道約5公里 \r\n2.騎乘時間：約40分鐘",
+      "staytime": "",
+      "modified": "2021-04-13 14:17:26 +08:00",
+      "url": "https://www.travel.taipei/zh-tw/attraction/details/5",
+      "category": [
+        {
+          "id": 12,
+          "name": "單車遊蹤"
+        },
+        {
+          "id": 16,
+          "name": "戶外踏青"
+        },
+        {
+          "id": 17,
+          "name": "藍色水路"
+        },
+        {
+          "id": 19,
+          "name": "親子共遊"
+        }
+      ],
+      "target": [
+        {
+          "id": 61,
+          "name": "親子共學"
+        },
+        {
+          "id": 62,
+          "name": "校外教學"
+        },
+        {
+          "id": 63,
+          "name": "單車族"
+        },
+        {
+          "id": 65,
+          "name": "賞鳥族"
+        },
+        {
+          "id": 66,
+          "name": "健行族"
+        }
+      ],
+      "service": [
+        {
+          "id": 146,
+          "name": "公廁"
+        }
+      ],
+      "friendly": [],
+      "images": [
+        {
+          "src": "https://www.travel.taipei/image/63340",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/63335",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/63337",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/63339",
+          "subject": "",
+          "ext": ".jpg"
+        }
+      ],
+      "files": [],
+      "links": []
+    },
+    {
+      "id": 4,
+      "name": "景美溪左、右岸自行車道",
+      "name_zh": null,
+      "open_status": 1,
+      "introduction": "有青山綠水相伴的景美溪左、右岸自行車道，沿線有動物園，政大球場及青草綠茵，溪流常有魚群穿梭，適合攜家帶眷全家出遊的路線。沿線的景觀相當豐富，翠綠草地，清澈溪流讓人感覺非常舒適，此外，於道南河濱公園內還設有各式各樣的運動場所，如籃球場、溜冰場、羽球場等，每到傍晚便可看到許多人或走或騎自行車到這兒來進行各種運動，是一個充滿活力的自行車道。",
+      "open_time": "開放空間",
+      "zipcode": "116",
+      "distric": "文山區",
+      "address": "116 臺北市文山區景美溪左右岸 道南河濱公園",
+      "tel": "",
+      "fax": "",
+      "email": "",
+      "months": "01,07,02,08,03,09,04,10,05,11,06,12",
+      "nlat": 24.98135,
+      "elong": 121.56629,
+      "official_site": "",
+      "facebook": "",
+      "ticket": "",
+      "remind": "1.長度：左岸3.8公里，右岸8.1公里。\r\n2.騎乘時間：左岸約25分鐘，右岸約15分鐘，可由道南橋連接兩岸。",
+      "staytime": "",
+      "modified": "2021-04-13 14:07:45 +08:00",
+      "url": "https://www.travel.taipei/zh-tw/attraction/details/4",
+      "category": [
+        {
+          "id": 12,
+          "name": "單車遊蹤"
+        },
+        {
+          "id": 16,
+          "name": "戶外踏青"
+        },
+        {
+          "id": 19,
+          "name": "親子共遊"
+        }
+      ],
+      "target": [
+        {
+          "id": 61,
+          "name": "親子共學"
+        },
+        {
+          "id": 63,
+          "name": "單車族"
+        }
+      ],
+      "service": [
+        {
+          "id": 146,
+          "name": "公廁"
+        }
+      ],
+      "friendly": [],
+      "images": [
+        {
+          "src": "https://www.travel.taipei/image/63334",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/63329",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/63331",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/63333",
+          "subject": "",
+          "ext": ".jpg"
+        }
+      ],
+      "files": [],
+      "links": []
+    },
+    {
+      "id": 1,
+      "name": "大稻埕碼頭_大稻埕碼頭貨櫃市集",
+      "name_zh": null,
+      "open_status": 1,
+      "introduction": "大稻埕原是平埔族的居住地，因萬華（艋舺）同安人發生激烈的械鬥，造成族人移至大稻埕定居，開始大稻埕淡水河旁商店和房屋的興建，淡水港開放後，大稻埕在劉銘傳的治理下成為臺北城最繁華的物資集散中心，當中以茶葉、布料為主要貿易交易，當時的延平北路及貴德街一帶便是商業活動的重心，也讓大稻埕早年的歷史多采多姿、令人回味。\r\n\r\n",
+      "open_time": "平常日以團體預約包船為主，例假日行駛固定航次，請洽詢各船公司。\r\n強烈季風、漲退潮水位差影響航行及靠泊安全，當日實際航班得由現場公告或網站預告調整。\r\n\r\n",
+      "zipcode": "103",
+      "distric": "大同區",
+      "address": "103 臺北市大同區大稻埕碼頭",
+      "tel": "+886-2-27208889",
+      "fax": "",
+      "email": "",
+      "months": "01,07,02,08,03,09,04,10,05,11,06,12",
+      "nlat": 25.0564,
+      "elong": 121.50761,
+      "official_site": "https://www.riverfun.net/wharf",
+      "facebook": "",
+      "ticket": "",
+      "remind": "",
+      "staytime": "",
+      "modified": "2021-04-13 14:01:07 +08:00",
+      "url": "https://www.travel.taipei/zh-tw/attraction/details/1",
+      "category": [
+        {
+          "id": 12,
+          "name": "單車遊蹤"
+        },
+        {
+          "id": 17,
+          "name": "藍色水路"
+        },
+        {
+          "id": 19,
+          "name": "親子共遊"
+        }
+      ],
+      "target": [
+        {
+          "id": 62,
+          "name": "校外教學"
+        }
+      ],
+      "service": [
+        {
+          "id": 144,
+          "name": "餐飲"
+        },
+        {
+          "id": 145,
+          "name": "購物"
+        },
+        {
+          "id": 146,
+          "name": "公廁"
+        }
+      ],
+      "friendly": [],
+      "images": [
+        {
+          "src": "https://www.travel.taipei/image/182690",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/182691",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/182692",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/182693",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/182694",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/182697",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/182698",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/182702",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/182703",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/214149",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/63302",
+          "subject": "",
+          "ext": ".jpg"
+        }
+      ],
+      "files": [],
+      "links": [
+        {
+          "src": "https://www.riverfun.net/dadaocheng-monuments-routes",
+          "subject": "大稻埕古蹟航線 - 藍色水路微旅行"
+        }
+      ]
+    },
+    {
+      "id": 2213,
+      "name": "葫蘆國小跨堤人行陸橋",
+      "name_zh": null,
+      "open_status": 1,
+      "introduction": "位於葫蘆國小附近的跨堤人行陸橋，因其波浪狀起伏的地面、兩側的玻璃橋面及頂部延伸整座陸橋的Z字形鋼筋有別於一般陸橋設計，整體特殊的造型吸引到社群網美及攝影愛好者的注意，使得葫蘆國小跨堤人行陸橋成為了熱門的打卡地標。\r\n\r\n天橋建議白天日光充足時前往拍攝，可順道至圓山、劍潭、士林、社子島...等周邊景點順遊，來一趟網美美拍一日遊。",
+      "open_time": "",
+      "zipcode": "111",
+      "distric": "士林區",
+      "address": "111 臺北市士林區葫蘆國小跨堤人行陸橋",
+      "tel": "",
+      "fax": "",
+      "email": "",
+      "months": "01,07,02,08,03,09,04,10,05,11,06,12",
+      "nlat": 25.08332,
+      "elong": 121.5065,
+      "official_site": "",
+      "facebook": "",
+      "ticket": "",
+      "remind": "此處為行人及自行車通道，拍照時勿長時間停留阻擋用路人，並保持適當距離以策安全",
+      "staytime": "",
+      "modified": "2020-12-16 13:53:34 +08:00",
+      "url": "https://www.travel.taipei/zh-tw/attraction/details/2213",
+      "category": [
+        {
+          "id": 12,
+          "name": "單車遊蹤"
+        },
+        {
+          "id": 18,
+          "name": "公共藝術"
+        }
+      ],
+      "target": [
+        {
+          "id": 61,
+          "name": "親子共學"
+        },
+        {
+          "id": 63,
+          "name": "單車族"
+        }
+      ],
+      "service": [],
+      "friendly": [],
+      "images": [
+        {
+          "src": "https://www.travel.taipei/image/193316",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/193312",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/193313",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/193314",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/193315",
+          "subject": "",
+          "ext": ".jpg"
+        }
+      ],
+      "files": [],
+      "links": []
+    },
+    {
+      "id": 2259,
+      "name": "成美右岸河濱公園",
+      "name_zh": null,
+      "open_status": 1,
+      "introduction": "成美右岸河濱公園位於基隆河 成功橋至麥帥一橋間(內湖側)，每到假日隔幾公尺就有一群各自聚精會神調弄手裡器具的人，仔細看看有電動遙控車、數位單眼相機&hellip;等，而且是大人玩得比小孩 還起勁！公園裡有許多的運動設施，包含網球場、籃球場、壘球練習場、溜冰場、單槓、體健設施&hellip;等，提供給臺北市民有更多的運動空間。\r\n\r\n串聯成美左、右岸公園的「彩虹橋」，橋身鮮紅，造型獨特，宛如一道彩虹橫跨在河道上。橋下自行車道寬敞，河堤護牆爬滿綠藤，牆基也呈現波浪狀，與彩虹橋呼應。彩虹橋兩端設有電梯直上 堤頂，方便肢障者、老人家及嬰兒車等不必勞累攀爬，無障礙的設計相當貼心，樓梯中間設有自行車牽引道，讓騎士們也可輕鬆通行兩端。\r\n\r\n在成美右岸河濱公園還可以拍到101大樓全景，藍天白雲；入夜之後，基隆河水色波光粼粼，畫面合諧，是許多攝影愛好者聚集的地方。\r\n\r\n(資料來源:臺北市政府工務局水利工程處)",
+      "open_time": "",
+      "zipcode": "114",
+      "distric": "內湖區",
+      "address": "114 臺北市內湖區潭美街",
+      "tel": "",
+      "fax": "",
+      "email": "",
+      "months": "01,07,02,08,03,09,04,10,05,11,06,12",
+      "nlat": 25.0556,
+      "elong": 121.586,
+      "official_site": "",
+      "facebook": "",
+      "ticket": "",
+      "remind": "",
+      "staytime": "",
+      "modified": "2020-11-20 13:59:19 +08:00",
+      "url": "https://www.travel.taipei/zh-tw/attraction/details/2259",
+      "category": [
+        {
+          "id": 12,
+          "name": "單車遊蹤"
+        },
+        {
+          "id": 16,
+          "name": "戶外踏青"
+        },
+        {
+          "id": 17,
+          "name": "藍色水路"
+        }
+      ],
+      "target": [],
+      "service": [],
+      "friendly": [],
+      "images": [
+        {
+          "src": "https://www.travel.taipei/image/181498",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/181499",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/181500",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/181501",
+          "subject": "",
+          "ext": ".jpg"
+        }
+      ],
+      "files": [],
+      "links": []
+    },
+    {
+      "id": 1984,
+      "name": "原住民文化主題公園",
+      "name_zh": null,
+      "open_status": 1,
+      "introduction": "臺北市外雙溪故宮博物院鄰近的公園，特別地規劃呈現原住民文化意象的主題風格，打造更有味道的原住民文化主題公園，包括各族人像石牌、少年與狗石像搗米人像、手紋像、人紋像、及大熊像、梅花鹿像、母與子石像等作品等，讓市民在臺北市內就可以接近原住民的生活；公園入口廣場寬闊氣勢擎天，向內沿著滿佈圖騰的圖騰地磚園路步行，進到湖畔水木棧廊道區，水邊種植落羽松群及多種水生植物如野薑花及睡蓮等，沿路以石板製成的石椅、石牆及各式圖騰地磚，配合生長的爛漫恣意的各式原生植物，營造一個含有豐富生態及展現原住民生活的意象。\r\n\r\n原住民文化主題公園不僅陳列原住民的藝術作品，也介紹了臺灣平埔族、雅美族、噶瑪蘭族、賽德克族、布農族、卑南族、排灣族、魯凱族、阿美族、鄒族、邵族、賽夏族、泰雅族的文化及緣起，藉由原住民順應自然的態度及精神，讓我們得以更了解原住民的生活藝術世界，原住民主題文化公園歡迎您的到訪。\r\n\r\n文字來源／公園走透透.臺北新花漾網站",
+      "open_time": "",
+      "zipcode": "111",
+      "distric": "士林區",
+      "address": "111 臺北市士林區至善路2段221號旁",
+      "tel": "",
+      "fax": "",
+      "email": "",
+      "months": "01,07,02,08,03,09,04,10,05,11,06,12",
+      "nlat": 25.1016,
+      "elong": 121.55077,
+      "official_site": "https://parks.taipei/parks/m2/pkl_parks_m2C.php?sid=200",
+      "facebook": "",
+      "ticket": "",
+      "remind": "",
+      "staytime": "",
+      "modified": "2020-10-28 15:57:49 +08:00",
+      "url": "https://www.travel.taipei/zh-tw/attraction/details/1984",
+      "category": [
+        {
+          "id": 12,
+          "name": "單車遊蹤"
+        },
+        {
+          "id": 16,
+          "name": "戶外踏青"
+        },
+        {
+          "id": 19,
+          "name": "親子共遊"
+        }
+      ],
+      "target": [
+        {
+          "id": 61,
+          "name": "親子共學"
+        },
+        {
+          "id": 62,
+          "name": "校外教學"
+        }
+      ],
+      "service": [],
+      "friendly": [],
+      "images": [
+        {
+          "src": "https://www.travel.taipei/image/160923",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/160924",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/160925",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/161453",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/161454",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/161455",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/161456",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/160921",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/160922",
+          "subject": "",
+          "ext": ".jpg"
+        }
+      ],
+      "files": [],
+      "links": []
+    },
+    {
+      "id": 2175,
+      "name": "美堤河濱公園",
+      "name_zh": null,
+      "open_status": 1,
+      "introduction": "位於基隆河大直橋至中山高速公路間，面積約456,163平方公尺。\r\n\r\n公園是基隆河截彎取直、闢建之後規劃的。公園裡提供完備的運動設施：網球場、羽球場、排球場、籃球場、直排輪練習場&hellip;等，提供給附近居民運動休閒的功能。在這裡，白天可以遠眺大直橋及圓山飯店，不時還可以感受飛機的震撼，晚上大直橋及河岸 的燈火雅緻迷人，漫步其間頗富情趣，是大直地區欣賞臺北市夜景和夜遊的最好去處。\r\n\r\n公園還規劃出一片「自然親水灣區」，除可增加物種的多樣性，亦可透過植物的吸附達到淨化水質的功能。提供市民一處可以生態教育，亦可以欣賞自然景觀之桃花源，有別於其他河濱公園的設備。\r\n\r\n(資料來源:臺北市政府工務局)",
+      "open_time": "",
+      "zipcode": "104",
+      "distric": "中山區",
+      "address": "104 臺北市中山區樂群一路基隆河基16號水門",
+      "tel": "+886-2-25702330",
+      "fax": "",
+      "email": "",
+      "months": "01,07,02,08,03,09,04,10,05,11,06,12",
+      "nlat": 25.07538,
+      "elong": 121.56087,
+      "official_site": "https://heo.gov.taipei/News_Content.aspx?n=E65DBD99C91AEAC4&sms=3A0FD6D3764BFBA7&s=DE6220D07C54A5FA",
+      "facebook": "",
+      "ticket": "",
+      "remind": "",
+      "staytime": "",
+      "modified": "2020-10-28 15:48:23 +08:00",
+      "url": "https://www.travel.taipei/zh-tw/attraction/details/2175",
+      "category": [
+        {
+          "id": 12,
+          "name": "單車遊蹤"
+        },
+        {
+          "id": 16,
+          "name": "戶外踏青"
+        },
+        {
+          "id": 17,
+          "name": "藍色水路"
+        },
+        {
+          "id": 19,
+          "name": "親子共遊"
+        }
+      ],
+      "target": [
+        {
+          "id": 61,
+          "name": "親子共學"
+        },
+        {
+          "id": 63,
+          "name": "單車族"
+        }
+      ],
+      "service": [],
+      "friendly": [],
+      "images": [
+        {
+          "src": "https://www.travel.taipei/image/180567",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/180568",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/180569",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/180570",
+          "subject": "",
+          "ext": ".jpg"
+        },
+        {
+          "src": "https://www.travel.taipei/image/180566",
+          "subject": "",
+          "ext": ".jpg"
+        }
+      ],
+      "files": [],
+      "links": []
+    }
+  ]
+}

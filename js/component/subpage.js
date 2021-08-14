@@ -73,111 +73,102 @@ let article2={
 	}
 }
 
+
+
+let res={
+    data:[],
+    count:2,
+    end_state:true
+}
+
+let res2={
+    data:[],
+    count:2,
+    end_state:true
+}
 let restaurant={
 	data:function(){
-        return {test_article:{},subname:"hot"}
+        return {res}
     },
     template:`
 		<div class="sub_page">
 			<div class="sect">
-				<p class="title">{{test_article.title}}</p>
+				<p class="title">熱門餐廳</p>
 				<ul class="restaurant">
-					<li class="content" v-for="(item,key) in test_article.source" v-show="key<test_article.view_count">
-						<div class="t_group">
-							<p class="idx">{{key+1}}</p>
-							<p class="title">{{item.title}}</p>
-						</div>
-						<img :src='item.src' onerror="this.src='https://picsum.photos/400/250?random=487'">
-						<p class="text">{{item.content}}</p>
-						<p class="address"><span>位置資訊：</span>{{item.address}}</p>
-						<p class="worktime"><span>營業時間：</span>{{item.phone}}</p>
+					<li class="content" v-for="(item,key) in res.data" v-show="key<res.count">
+                        <router-link :to="{path: '/restaurant/' + item.ID}" target='_blank'>
+                            <div class="t_group">
+                                <p class="idx">{{key+1}}</p>
+                                <p class="title">{{item.name}}</p>
+                            </div>
+                            <img :src="'https://picsum.photos/800/600?random=487'+key">
+                            <p class="text">{{item.content}}</p>
+                            <p class="address"><span>位置資訊：</span>{{item.address}}</p>
+                            <p class="worktime"><span>營業時間：</span>{{item.opentime}}</p>
+                        </router-link>
 					</li>
-					<li class="none_box" v-show="test_article.end_state" @click="more_count" ><a class="more_btn" href="javascript:void(0)">查看更多</a></li>
+					<li class="none_box" v-show="res.end_state" @click="more_count" ><a class="more_btn" href="javascript:void(0)">查看更多</a></li>
 				</ul>
 			</div>
 		</div>
     `,
-    mounted:function(){
-        let loading_count=30
-        let title=this.subname==="hot"?"熱門餐廳":"最新餐廳"
-        axios.get(host+'/api/restaurants').then((res)=>{
-            let data={
-                end_state:true,
-                view_count:8,
-                title:title,
-                source:[]
-            }
-            for(let i=0;i<loading_count;i++){
-                data["source"].push({
-                    "src":res.data[i].Rphoto,
-                    "title":res.data[i].Rname,
-                    "content":res.data[i].Rdescription,
-                    "phone":res.data[i].Rphone,
-                    "address":res.data[i].Raddress
-                })
-            }
-            this.test_article=data
-        })
-	},
+    // <img :src='item.src' onerror="this.src='https://picsum.photos/400/250?random=487'+key">
+    async created(){
+        db.collection("restaurant").orderBy("metrics.likes","asc").limit(5).get()
+        .then((res) => {
+            res.forEach((txt)=>{
+                this.res.data.push(txt.data())
+            })
+        }).catch((error) => console.log(error))
+    },
     methods:{
         more_count(){
-            this.test_article.view_count+=3
-            if(this.test_article.view_count>=this.test_article.source.length)
-                this.test_article.end_state=false
+            this.res.count+=2
+            if(this.res.count>=this.res.data.length)//如果大於顯示數量
+                this.res.end_state=false//關閉查看更多
         }
     }
 }
 let restaurant2={
 	data:function(){
-        return {test_article:{},subname:"new"}
+        return {res:res2}
     },
     template:`
 		<div class="sub_page">
 			<div class="sect">
-				<p class="title">{{test_article.title}}</p>
+				<p class="title">最新餐廳</p>
 				<ul class="restaurant">
-					<li class="content" v-for="(item,key) in test_article.source" v-show="key<test_article.view_count">
-						<div class="t_group">
-							<p class="idx">{{key+1}}</p>
-							<p class="title">{{item.title}}</p>
-						</div>
-						<img :src='item.src' onerror="this.src='https://picsum.photos/400/250?random=487'">
-						<p class="text">{{item.content}}</p>
-						<p class="address"><span>位置資訊：</span>{{item.address}}</p>
-						<p class="worktime"><span>營業時間：</span>{{item.phone}}</p>
+					<li class="content" v-for="(item,key) in res.data" v-show="key<res.count">
+                        <router-link :to="{path: '/restaurant/' + item.ID}" target='_blank'>
+                            <div class="t_group">
+                                <p class="idx">{{key+1}}</p>
+                                <p class="title">{{item.name}}</p>
+                            </div>
+                            <img :src="'https://picsum.photos/800/600?random=487'+key">
+                            <p class="text">{{item.content}}</p>
+                            <p class="address"><span>位置資訊：</span>{{item.address}}</p>
+                            <p class="worktime"><span>營業時間：</span>{{item.opentime}}</p>
+                        </router-link>
 					</li>
-					<li class="none_box" v-show="test_article.end_state" @click="more_count" ><a class="more_btn" href="javascript:void(0)">查看更多</a></li>
+					<li class="none_box" v-show="res.end_state" @click="more_count" ><a class="more_btn" href="javascript:void(0)">查看更多</a></li>
 				</ul>
 			</div>
 		</div>
     `,
-    mounted:function(){
-        let loading_count=30
-        let title=this.subname==="hot"?"熱門餐廳":"最新餐廳"
-        axios.get(host+'/api/restaurants').then((res)=>{
-            let data={
-                end_state:true,
-                view_count:8,
-                title:title,
-                source:[]
-            }
-            for(let i=0;i<loading_count;i++){
-                data["source"].push({
-                    "src":res.data[i].Rphoto,
-                    "title":res.data[i].Rname,
-                    "content":res.data[i].Rdescription,
-                    "phone":res.data[i].Rphone,
-                    "address":res.data[i].Raddress
-                })
-            }
-            this.test_article=data
-        })
-	},
+    // <img :src='item.src' onerror="this.src='https://picsum.photos/400/250?random=487'+key">
+    async created(){
+        db.collection("restaurant").orderBy("ID","desc").limit(5).get()
+        .then((res) => {
+            res.forEach((txt)=>{
+                this.res.data.push(txt.data())
+            })
+        }).catch((error) => console.log(error))
+    },
     methods:{
         more_count(){
-            this.test_article.view_count+=3
-            if(this.test_article.view_count>=this.test_article.source.length)
-                this.test_article.end_state=false
+            this.res.count+=2
+            if(this.res.count>=this.res.data.length)//如果大於顯示數量
+                this.res.end_state=false//關閉查看更多
         }
     }
 }
@@ -254,90 +245,108 @@ let activity2={
 	}
 }
 
+let view={
+    data:[],
+    count:2,
+    end_state:true
+}
 
+let view2={
+    data:[],
+    count:2,
+    end_state:true
+}
 
 let attraction={
 	data:function(){
-        return {subname:"hot",test_article:{}}
+        return {view}
     },
     template:`
-		<div class="sub_page">
-			<div class="sect">
-				<p class="title">{{test_article.title}}</p>
-				<ul class="attraction">
-					<li v-for="(item,key) in test_article.source" v-show="key<test_article.view_count" ><img :src="item.src" onerror="this.src='https://picsum.photos/400/250?random=487'"><span>{{item.title}}</span></li>
-					<li class="none_box" v-show="test_article.end_state" @click="more_count" ><a class="more_btn" href="javascript:void(0)">查看更多</a></li>
-				</ul>
-			</div>
-		</div>
+        <div class="sub_page">
+            <div class="attr">
+                <p class="title">熱門景點</p>
+                <li v-for="(item,key) in view.data" v-show="key<view.count" >
+                    <router-link :to="{path: '/attraction/' + item.ID}" target='_blank'>
+                        <div class="wrap">
+                            <img :src="'https://picsum.photos/900/200?random='+item.ID">
+                            <div class="banner-txt">
+                                <h1>{{item.name}}</h1>
+                            </div>
+                        </div>
+                    </router-link>
+                </li>
+                <li class="none_box" v-show="view.end_state" @click="more_count" ><a class="more_btn" href="javascript:void(0)">查看更多</a></li>
+            </div>
+        </div>
     `,
+    async created(){
+        db.collection("attraction").orderBy("metrics.likes","asc").limit(10).get()
+        .then((res) => {
+            res.forEach((txt)=>{
+                this.view.data.push(txt.data())
+            })
+        }).catch((error) => console.log(error))
+    },
     mounted:function(){
-        let loading_count=20
-        let title=this.subname==="hot"?"熱門景點":"最新景點"
-        axios.get(host+'/api/attractions').then((res)=>{
-            let view={
-                end_state:true,
-                view_count:4,
-                title:title,
-                source:[]
-            }
-            for(let i=0;i<loading_count;i++){
-                view["source"].push({
-                    "src":res.data[i].Atphoto,
-                    "title":res.data[i].Atname
-                })
-            }
-            this.test_article=view    
-        }) 
+    },
+    computed:{
+        background(){
+            let rnd=Math.floor(Math.random() * 10000)
+            return 'https://picsum.photos/900/200?random='+rnd
+        }
     },
     methods:{
         more_count(){
-            this.test_article.view_count+=4
-            if(this.test_article.view_count>=this.test_article.source.length)
-                this.test_article.end_state=false
+            this.view.count+=2
+            if(this.view.count>=this.view.data.length)//如果大於顯示數量
+                this.view.end_state=false//關閉查看更多
         }
         
     }
 }
 let attraction2={
 	data:function(){
-        return {subname:"new",test_article:{}}
+        return {view:view2}
     },
     template:`
-		<div class="sub_page">
-			<div class="sect">
-				<p class="title">{{test_article.title}}</p>
-				<ul class="attraction">
-					<li v-for="(item,key) in test_article.source" v-show="key<test_article.view_count" ><img :src="item.src" onerror="this.src='https://picsum.photos/400/250?random=487'"><span>{{item.title}}</span></li>
-					<li class="none_box" v-show="test_article.end_state" @click="more_count" ><a class="more_btn" href="javascript:void(0)">查看更多</a></li>
-				</ul>
-			</div>
-		</div>
+    <div class="sub_page">
+        <div class="attr">
+            <p class="title">最新景點</p>
+            <li v-for="(item,key) in view.data" v-show="key<view.count" >
+                <router-link :to="{path: '/attraction/' + item.ID}" target='_blank'>
+                    <div class="wrap">
+                        <img :src="'https://picsum.photos/900/200?random='+item.ID">
+                        <div class="banner-txt">
+                            <h1>{{item.name}}</h1>
+                        </div>
+                    </div>
+                </router-link>
+            </li>
+            <li class="none_box" v-show="view.end_state" @click="more_count" ><a class="more_btn" href="javascript:void(0)">查看更多</a></li>
+        </div>
+    </div>
     `,
+    async created(){
+        db.collection("attraction").orderBy("ID","desc").limit(10).get()
+        .then((res) => {
+            res.forEach((txt)=>{
+                this.view.data.push(txt.data())
+            })
+        }).catch((error) => console.log(error))
+    },
     mounted:function(){
-        let loading_count=20
-        let title=this.subname==="hot"?"熱門景點":"最新景點"
-        axios.get(host+'/api/attractions').then((res)=>{
-            let view={
-                end_state:true,
-                view_count:4,
-                title:title,
-                source:[]
-            }
-            for(let i=0;i<loading_count;i++){
-                view["source"].push({
-                    "src":res.data[i].Atphoto,
-                    "title":res.data[i].Atname
-                })
-            }
-            this.test_article=view    
-        }) 
+    },
+    computed:{
+        background(){
+            let rnd=Math.floor(Math.random() * 10000)
+            return 'https://picsum.photos/900/200?random='+rnd
+        }
     },
     methods:{
         more_count(){
-            this.test_article.view_count+=4
-            if(this.test_article.view_count>=this.test_article.source.length)
-                this.test_article.end_state=false
+            this.view.count+=2
+            if(this.view.count>=this.view.data.length)//如果大於顯示數量
+                this.view.end_state=false//關閉查看更多
         }
         
     }

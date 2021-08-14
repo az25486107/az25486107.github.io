@@ -39,12 +39,6 @@ let vm=new Vue({
             return window.location.hash.split("/")[1]
         }
     },
-    beforemounted(){
-        if (window.screen.width<'600')
-            document.write ('<body style="zoom: 55%">');
-        else if (window.screen.width<'800')
-            document.write ('<body style="zoom: 75%">');
-    },
     mounted(){
         this.intervalId = setInterval(this.scroll, 5000)
     },

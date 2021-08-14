@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="stylesheet" rel="stylesheet" href="/style/view.css">
+    <script src="./js/test.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/4d3b46d279/UntitledProject/style.css">
+    
+    
+
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div style="height:300px" id="map"></div> -->
+    <div class="test">
+        <div class="bottom">
+            <div class="btn_group">
+                <div class="map nav">
+                    <h3>地圖<br><span class="lnr lnr-map"></span></h3>
+                </div>
+                <div class="introduc nav">
+                    <h3>介紹<br><span class="lnr lnr-book"></span></h3>
+                </div>
+                <div class="article nav">
+                    <h3>文章<br><span class="lnr lnr-license"></span></h3>
+                </div>
+                <div class="activity nav">
+                    <h3>活動<br><span class="lnr lnr-users"></span></h3>
+                </div>
+                <div class="detail nav">
+                    <h3>照片<br><span class="lnr lnr-camera"></span></h3>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="left">
+                <nav class="action">
+                    <div class="nav">
+                        <h4><span class="lnr lnr-heart"></span></h4>
+                        <h6 class="name">喜歡</h6>
+                    </div>
+                    <div class="nav">
+                        <h4><span class="lnr lnr-tag"></span></h4>
+                        <h6 class="name">收藏</h6>
+                    </div>
+                    <div class="nav">
+                        <h4><span class="lnr lnr-file-add"></span></h4>
+                        <h6 class="name">加入行程</h6>
+                    </div>
+                </nav>
+                <!-- <div class="content">
+                    <h1>簡介</h1>
+                    <h6>金屬是否，視頻筆者動態懷疑走了，公主具體小學出口地區一起收益演員靈魂最好自由，大家都多年發佈為何發揮，管理今年，更好學生幾天傳來教育萬元召開不要影響犯罪具備恐怕萬華站點良好，階段瞭解比如說了天堂傳說便是認定預測恐怖精華，一定會禮物一邊限制先進教育內置，基。</h3>
+                    <hr class="style-one">
+                    </hr>
+                    <div class="info">
+                        <h6>
+                            <span class="lnr lnr-map-marker"></span><span class="text">210台北市信義區松壽路30號1樓</span>
+                        </h6>
+                        <h6>
+                            <span class="lnr lnr-book"></span><span class="text">02 2723 5578</span>
+                        </h6>
+                        <h6>
+                            <span class="lnr lnr-earth"></span><span class="text">https://www.tripadvisor.com.tw/</span>
+                        </h6>
+                    </div>
+                </div> -->
+                <div class="article_group">
+                    <h1>相關文章</h1>
+                    <li>
+                        <div class="wrap">
+                            <img src="https://picsum.photos/300/200?random=5">
+                            <div class="banner-txt">
+                                <h6>溫州服。</h6>
+                            </div>
+                        </div>
+                    </li>
+                    <li><div class="wrap">
+                        <img src="https://picsum.photos/300/200?random=6">
+                        <div class="banner-txt">
+                            <h6>其他的義務，中文版。</h6>
+                        </div>
+                    </div></li>
+                    <li><div class="wrap">
+                        <img src="https://picsum.photos/300/200?random=47">
+                        <div class="banner-txt">
+                            <h6>是什麼策略今日，使得工作規。</h6>
+                        </div>
+                    </div></li>
+                    <li><div class="wrap">
+                        <img src="https://picsum.photos/300/200?random=76">
+                        <div class="banner-txt">
+                            <h6>是什麼策略今日，使得工作規。</h6>
+                        </div>
+                    </div></li>
+                    <li><div class="wrap">
+                        <img src="https://picsum.photos/300/200?random=12">
+                        <div class="banner-txt">
+                            <h6>是什麼策略今日，使得工作規。</h6>
+                        </div>
+                    </div></li>
+                </div>
+            </div>
+            <div class="right">
+                <!-- <div class="album">
+                    <img src='https://picsum.photos/960/960?random='>
+                </div>
+                
+                <div class="zoom">
+                    <img src='https://picsum.photos/70/40?random=12'>
+                    <img src='https://picsum.photos/70/40?random=2'>
+                    <img src='https://picsum.photos/70/40?random=7'>
+                    <img src='https://picsum.photos/70/40?random=9'>
+                </div>
+                <div class="mask">
+                    
+                </div> -->
+    
+                <div id="map"></div>
+            </div>
+        </div>        
+    </div>
+</body>
+
+<script>
+    let map;
+    let tw={lat: 25.05996, lng: 121.57231};
+    function initMap() {
+        map = new google.maps.Map(document.getElementById("map"), {
+            center: tw,
+            zoom: 15,
+        });
+
+        var maker=new google.maps.Marker({
+            position:tw,
+            map:map
+        })
+    }
+
+    initMap()
+</script>
+</html>

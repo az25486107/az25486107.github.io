@@ -29,7 +29,7 @@ body .header .right .wrap input#acc:focus, body .header .right .wrap input#pwd:f
 body {
   font-family: 'oxxo';
   margin: auto;
-  background-image: url("https://picsum.photos/1920/1080?random=7");
+  background-image: url("https://picsum.photos/1920/1080?random=6");
 }
 
 body:before {
@@ -41,6 +41,164 @@ body:before {
   bottom: 0;
   background: rgba(18, 17, 29, 0.8);
   z-index: 1;
+}
+
+body .background {
+  position: relative;
+  margin: 150px auto;
+  margin-bottom: 20px;
+  width: 850px;
+  height: 500px;
+  border-radius: 10px;
+  border-radius: 5px;
+  background-image: url("https://picsum.photos/850/500?random=8");
+  z-index: 1;
+}
+
+body .background:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(226, 154, 154, 0.8);
+  z-index: 1;
+}
+
+body .background .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: -90px;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 420px;
+  margin: 0 auto;
+  height: 600px;
+  background-color: white;
+  z-index: 2;
+  border-radius: 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+          box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+body .background .wrap .logo {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-size: 70px;
+  height: 100px;
+  font-weight: bolder;
+  background-color: #eeeded;
+  color: #d57f7e;
+  border-bottom: 2px solid #c5c5c5;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 3px 3px 3px black;
+}
+
+body .background .wrap .logo p {
+  width: 230px;
+  margin: 15px auto;
+}
+
+body .background .wrap .content {
+  width: 420px;
+  height: 550px;
+}
+
+body .background .wrap .sub {
+  margin: 0 auto;
+  text-align: center;
+}
+
+body .background .wrap .sub .icon {
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+}
+
+body .background .wrap .sub .icon img {
+  width: 200px;
+  height: 200px;
+}
+
+body .background .wrap .sub .title {
+  width: 230px;
+  font-size: 25px;
+  margin: 0 auto;
+  font-weight: bolder;
+}
+
+body .background .wrap .sub .title2 {
+  width: 330px;
+}
+
+body .background .wrap .sub .description {
+  width: 380px;
+  margin: 0 auto;
+  margin: 30px;
+}
+
+body .background .wrap .sub > input {
+  padding-left: 10px;
+  width: 345px;
+  font-size: 25px;
+  line-height: 40px;
+  border-radius: 5px;
+  margin: 10px auto;
+}
+
+body .background .wrap .sub .btn_group {
+  height: 50px;
+}
+
+body .background .wrap .sub .btn_group a.cancel {
+  font-size: 20px;
+  width: 120px;
+  height: 20px;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bolder;
+  border-radius: 5px;
+  padding: 10px 55px;
+  background: #eeeded;
+  color: #adadad;
+  border: 2px solid #a7a4a4;
+}
+
+body .background .wrap .sub .btn_group button.passmail {
+  font-weight: bolder;
+  padding: 10px 55px;
+  margin: 0 15px;
+  background: #d57f7e;
+  color: white;
+  border-radius: 5px;
+  font-size: 20px;
+  border: 2px solid #a7a4a4;
+}
+
+body .background .wrap .sub .btn_group a.pass {
+  display: block;
+  text-align: center;
+  line-height: 40px;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: bolder;
+  width: 360px;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  background: #d57f7e;
+  border: 2px solid #a7a4a4;
+}
+
+body .background .wrap .sub .btn_group a.pass.back {
+  display: block;
+  margin: 10px auto;
+  background: #eeeded;
+  color: #adadad;
 }
 
 body .header {

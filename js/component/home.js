@@ -119,7 +119,7 @@ let nav={
 				<router-link to="/">通知</router-link>
 				<router-link to="/">下載</router-link>
 				<router-link to="/">關於我們</router-link>
-				<router-link v-if=user.state to="/user">
+				<router-link v-if=user.uid to="/user">
 					<div class="user">
 						<img v-if=user.photourl :src=photourl>
 						<div class="word_pic" v-else >{{user.displayname}}</div>
@@ -134,11 +134,10 @@ let nav={
 		</nav>
 	`,
 	async created(){
-        let tmp_user=firebase.auth().currentUser
-        let c=await db.collection("user").doc(tmp_user.uid).get().then((res)=>{
+		this.user.uid=localStorage.getItem("uid")
+        await db.collection("user").doc(this.user.uid).get().then((res)=>{
             if(res.data()){
 				this.user.state=true
-                this.user.uid=tmp_user.uid
                 this.user.birth=""||res.data().birth
                 this.user.location=""||res.data().location
                 this.user.hoppy=""||res.data().hoppy
@@ -147,8 +146,8 @@ let nav={
                 this.user.job=""||res.data().job
                 this.user.sex=""||res.data().sex
                 this.user.photourl=""||res.data().photourl
-                this.user.email=tmp_user.email
-                this.user.displayname=tmp_user.email[0].toUpperCase()+tmp_user.email[1]||res.data().displayname
+                // this.user.email=tmp_user.email
+                // this.user.displayname=tmp_user.email[0].toUpperCase()+tmp_user.email[1]||res.data().displayname
             }else{
                 this.user.displayname="te"||tmp_user.email[0].toUpperCase()+tmp_user.email[1]
             }

@@ -5,9 +5,14 @@
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
         <script src="https://kit.fontawesome.com/2a41585493.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
         <link rel="stylesheet" href="./css/reset.css">
         <link id="stylesheet" rel="stylesheet" href="/style/style2.css">
-        <meta name="viewport" content="width=device-width, initial-scale=0.4,user-scalable=no" />
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=0.4,user-scalable=no" /> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+        <script async
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGGJUBaGHIiul0FzkWFQQoOQvXh7BVjIs">
+        </script>
         <title>Trappy</title>
     </head>
     <body >
@@ -25,7 +30,7 @@
 
                 <!-- <img class="banner" src='https://picsum.photos/960/500' alt=""> -->
 
-            <div v-show="css.black_block.display" class="block" @click="close_other">
+            <!-- <div v-show="css.black_block.display" class="block" @click="close_other">
                 
             </div>
 
@@ -38,15 +43,16 @@
                 <p class="intro">只需選擇目的地與出發日期就能規劃旅遊行程</p>
                 <a class="button" href="#">建立行程</a>
                 <a class="text" href="#">看其他人去哪裡玩</a>
-            </div>
+            </div> -->
         </div>    
     </div>
     </body>
+
     <script src="https://unpkg.com/vue/dist/vue.js"></script>
     <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
-
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.2/underscore.js' integrity='sha512-qOGVQUAA2eg7+G8YsKuefW2kdQF5mfSghBxcekexwQy+DPTuBFf0MM30FyDKZPjtQr3sUOQg/LVWh2uftNH45A==' crossorigin='anonymous'></script>
     <!-- TODO: Add SDKs for Firebase products that you want to use
         https://firebase.google.com/docs/web/setup#available-libraries -->
     <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script>

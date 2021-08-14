@@ -7,14 +7,27 @@
         <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
         <script src="https://kit.fontawesome.com/2a41585493.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="./css/reset.css">
-        <link href="./style/style2.css" rel="stylesheet">
-        <link href="./style/style_login.css" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="./style/style_login.css"> -->
+        <!-- <link href="./style/style2.css" rel="stylesheet"> -->
+        <link href="./style/view.css" rel="stylesheet">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.js"></script>
         <title>Trappy</title>
     </head>
     <body >
         <div id="app">
-            <router-view></router-view>
+            <nav>
+                
+            </nav>
+            <div class="container" id="view">
+                <div class="album">
+                    <img src='https://picsum.photos/1920/1080?random='>
+                    <div class="nav">  
+                    </div>
+                    <h1>琴小姊豆漿店</h1>
+                    <div class="content">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     </body>
@@ -43,5 +56,4 @@
         firebase.initializeApp(firebaseConfig);
         firebase.analytics();
     </script>
-    <script type="module" src="./js/login.js"></script>
 </html>
